@@ -1,11 +1,15 @@
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion"
+import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion"
 import type { MouseEvent } from "react"
 
 export default function Background() {
   let mouseX = useMotionValue(-50)
+  const springX = useSpring(mouseX, { stiffness: 1000, damping: 100 })
   let mouseY = useMotionValue(1800)
+  const springY = useSpring(mouseY, { stiffness: 1000, damping: 100 })
   let mouseA = useMotionValue(50)
+  const springA = useSpring(mouseA, { stiffness: 1000, damping: 100 })
   let mouseB = useMotionValue(1000)
+  const springB = useSpring(mouseB, { stiffness: 1000, damping: 100 })
 
   function handleMouseMove({ clientX, clientY, currentTarget }: MouseEvent) {
     console.log("triggered")
@@ -31,10 +35,10 @@ export default function Background() {
   return (
     <div className="group">
       <div onMouseMove={handleMouseMove} className=" fixed bottom-0 left-0 right-0 top-0 z-0 justify-center"></div>
-      <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center opacity-0 transition duration-1000 group-hover:opacity-100 md:left-0">
+      <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center  md:left-0">
         <motion.svg
           transition={{ type: "inertia" }}
-          viewBox={useMotionTemplate`${mouseX} ${mouseA} ${mouseY} ${mouseB}`}
+          viewBox={useMotionTemplate`${springX} ${springA} ${springY} ${springB}`}
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_f_22_31)">
