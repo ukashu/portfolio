@@ -26,12 +26,12 @@ export default function Background() {
             <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_22_31" />
           </filter>
           <linearGradient id="paint0_linear_22_31" x1="669" y1="311" x2="669" y2="861" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#0009DB" />
-            <stop offset="1" stopColor="#000463" />
+            <stop stopColor="#4B006F" />
+            <stop offset="1" stopColor="#14004D" />
           </linearGradient>
           <linearGradient id="paint1_linear_22_31" x1="1100" y1="871" x2="1379" y2="246" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#0007A4" />
-            <stop offset="1" stopColor="#0007A4" stopOpacity="0.68" />
+            <stop stopColor="#14004D" />
+            <stop offset="1" stopColor="#4B006F" stopOpacity="0.68" />
           </linearGradient>
         </defs>
       </svg>
