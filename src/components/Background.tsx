@@ -35,7 +35,7 @@ export default function Background() {
   return (
     <div className="group">
       <div onMouseMove={handleMouseMove} className=" fixed bottom-0 left-0 right-0 top-0 z-0 justify-center"></div>
-      <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center opacity-0 transition duration-1000 group-hover:opacity-100 md:left-0">
+      <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center transition duration-1000 group-hover:opacity-100 sm:opacity-0 md:left-0">
         <motion.svg
           transition={{ type: "inertia" }}
           viewBox={useMotionTemplate`${springX} ${springA} ${springY} ${springB}`}
