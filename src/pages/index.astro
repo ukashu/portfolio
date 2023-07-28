@@ -1,20 +1,41 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
+import Background from '../components/Background';
+import Footer from '../components/Footer'
 ---
 
 <Layout title="ukashu dev">
-	<main>
+	<section id="landing" class=" flex flex-col justify-between">
 		<Header client:load/>
-	</main>
+		<Background/>
+		<main class=" flex flex-col sm:flex-row h-3/5 flex-grow justify-around items-center">
+			<div class=" text-center">
+				<p>
+					John Doe
+				</p>
+				<p>
+					front-end developer
+				</p>
+			</div>
+			<ul class=" text-center">
+				My projects:
+				<li class=" text-left">website</li>
+				<li class=" text-left">website</li>
+				<li class=" text-left">website</li>
+			</ul>
+    </main>
+		<Footer/>
+	</section>
 </Layout>
 
 <style>
-	main {
+	#landing {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		width: 1000px;
 		max-width: calc(100% - 2rem);
+		min-height: 100vh;
 		color: #EBEBEB;
 		font-size: 20px;
 		line-height: 1.6;
