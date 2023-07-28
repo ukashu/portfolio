@@ -17,7 +17,7 @@ import Tooltip from "./Tooltip"
 
 export default function Footer() {
   return (
-    <div className=" flex h-1/5 flex-col gap-4 overflow-hidden pb-40 max-[800px]:pb-20">
+    <div className=" flex h-1/5 flex-col gap-4 overflow-hidden pb-32 max-[800px]:pb-20">
       <p className=" font-semibold">My skills:</p>
       <div className=" flex flex-row flex-wrap justify-center gap-5">
         <Tooltip message="TypeScript">
