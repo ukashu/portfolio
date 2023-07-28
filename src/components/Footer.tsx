@@ -9,8 +9,7 @@ import {
   BiLogoPostgresql,
   BiLogoTailwindCss,
   BiLogoHtml5,
-  BiLogoCss3,
-  BiLogoChrome
+  BiLogoCss3
 } from "react-icons/bi"
 import { SiExpress, SiPrisma, SiLinux } from "react-icons/si"
 import Tooltip from "./Tooltip"
@@ -61,9 +60,6 @@ export default function Footer() {
         </Tooltip>
         <Tooltip message="Linux">
           <SiLinux size="2em" />
-        </Tooltip>
-        <Tooltip message="Chrome extensions">
-          <BiLogoChrome size="2em" />
         </Tooltip>
       </div>
     </div>
