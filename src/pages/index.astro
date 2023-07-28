@@ -9,20 +9,20 @@ import Footer from '../components/Footer'
 	<section id="landing" class=" flex flex-col justify-between">
 		<Header client:load/>
 		<Background/>
-		<main class=" flex flex-col sm:flex-row h-3/5 flex-grow justify-around items-center">
+		<main class=" flex flex-col sm:flex-row h-3/5 flex-grow justify-around items-center px-6">
 			<div class=" text-center">
-				<p>
+				<h1 class="font-bold text-5xl mb-1">
 					John Doe
-				</p>
+				</h1>
 				<p>
-					front-end developer
+					front-end web developer
 				</p>
 			</div>
-			<ul class=" text-center">
-				My projects:
-				<li class=" text-left">website</li>
-				<li class=" text-left">website</li>
-				<li class=" text-left">website</li>
+			<ul class=" text-left list-disc">
+				<p class="font-semibold text-2xl text-center">My projects</p>
+				<li class="underline">ecommerce website</li>
+				<li class="underline">musicians website</li>
+				<li class="underline">goodteacher mobile app</li>
 			</ul>
     </main>
 		<Footer/>
@@ -33,7 +33,7 @@ import Footer from '../components/Footer'
 	#landing {
 		margin: auto;
 		padding: 1rem;
-		width: 1000px;
+		width: 1300px;
 		max-width: calc(100% - 2rem);
 		min-height: 100vh;
 		color: #FCFF74;

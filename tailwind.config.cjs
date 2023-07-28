@@ -8,7 +8,8 @@ module.exports = {
       darkpurple: "#14004D",
       darkblue: "#01003A",
       yellow: "#FCFF74",
-      offwhite: "#E6E6E6"
+      offwhite: "#E6E6E6",
+      mediumgrey: "#292929"
     }
   },
   plugins: []
