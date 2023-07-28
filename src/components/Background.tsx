@@ -1,7 +1,7 @@
 export default function Background() {
   return (
     <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-100] flex min-w-[1200px] justify-center md:left-0">
-      <svg className="" viewBox="-100 0 2000 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="" viewBox="-50 100 1800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_22_31)">
           <path
             d="M1159 478C1193 601 891 802 637 861C420 861 126 850 184 701.5C273 530 492 311 710 311C927 311 1100 315 1159 478Z"
