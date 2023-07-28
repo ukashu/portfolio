@@ -1,4 +1,4 @@
-import { SiGithub } from "react-icons/si"
+import { SiGithub } from "react-icons/si/index.js"
 
 export default function Header() {
   return (

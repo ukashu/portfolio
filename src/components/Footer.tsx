@@ -14,7 +14,7 @@ import {
   SiHtml5,
   SiCss3,
   SiGooglechrome
-} from "react-icons/si"
+} from "react-icons/si/index.js"
 import Tooltip from "./Tooltip"
 
 export default function Footer() {
