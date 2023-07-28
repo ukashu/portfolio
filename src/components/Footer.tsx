@@ -1,17 +1,20 @@
 import {
-  BiLogoTypescript,
-  BiLogoJavascript,
-  BiLogoNodejs,
-  BiLogoReact,
-  BiLogoGit,
-  BiLogoGithub,
-  BiLogoFigma,
-  BiLogoPostgresql,
-  BiLogoTailwindCss,
-  BiLogoHtml5,
-  BiLogoCss3
-} from "react-icons/bi"
-import { SiExpress, SiPrisma, SiLinux } from "react-icons/si"
+  SiExpress,
+  SiPrisma,
+  SiLinux,
+  SiTypescript,
+  SiJavascript,
+  SiNodedotjs,
+  SiReact,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiPostgresql,
+  SiTailwindcss,
+  SiHtml5,
+  SiCss3,
+  SiGooglechrome
+} from "react-icons/si"
 import Tooltip from "./Tooltip"
 
 export default function Footer() {
@@ -20,46 +23,49 @@ export default function Footer() {
       <p className=" font-semibold sm:ml-32">My skills:</p>
       <div className=" flex flex-row flex-wrap justify-center gap-5">
         <Tooltip message="TypeScript">
-          <BiLogoTypescript size="2em" />
+          <SiTypescript size="2em" />
         </Tooltip>
         <Tooltip message="JavaScript">
-          <BiLogoJavascript size="2em" />
+          <SiJavascript size="2em" />
         </Tooltip>
         <Tooltip message="NodeJS">
-          <BiLogoNodejs size="2em" />
+          <SiNodedotjs size="2em" />
         </Tooltip>
         <Tooltip message="ExpressJS">
           <SiExpress size="2em" />
         </Tooltip>
         <Tooltip message="React/React Native">
-          <BiLogoReact size="2em" />
+          <SiReact size="2em" />
         </Tooltip>
         <Tooltip message="PostgreSQL">
-          <BiLogoPostgresql size="2em" />
+          <SiPostgresql size="2em" />
         </Tooltip>
         <Tooltip message="TailwindCSS">
-          <BiLogoTailwindCss size="2em" />
+          <SiTailwindcss size="2em" />
         </Tooltip>
         <Tooltip message="HTML5">
-          <BiLogoHtml5 size="2em" />
+          <SiHtml5 size="2em" />
         </Tooltip>
         <Tooltip message="CSS3">
-          <BiLogoCss3 size="2em" />
+          <SiCss3 size="2em" />
         </Tooltip>
         <Tooltip message="Prisma">
           <SiPrisma size="2em" />
         </Tooltip>
         <Tooltip message="Figma">
-          <BiLogoFigma size="2em" />
+          <SiFigma size="2em" />
         </Tooltip>
         <Tooltip message="Git">
-          <BiLogoGit size="2em" />
+          <SiGit size="2em" />
         </Tooltip>
         <Tooltip message="GitHub">
-          <BiLogoGithub size="2em" />
+          <SiGithub size="2em" />
         </Tooltip>
         <Tooltip message="Linux">
           <SiLinux size="2em" />
+        </Tooltip>
+        <Tooltip message="Chromium extensions">
+          <SiGooglechrome size="2em" />
         </Tooltip>
       </div>
     </div>
