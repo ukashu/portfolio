@@ -2,11 +2,11 @@ import { BiLogoGithub } from "react-icons/bi"
 
 export default function Header() {
   return (
-    <header className=" min-h-1/5 flex flex-row items-center justify-evenly gap-1 pb-20">
+    <header className="min-h-1/5 z-10 flex flex-row items-center justify-evenly gap-1 pb-20 sm:px-32">
       <a href="https://github.com/">
         <BiLogoGithub size="1.5em" onClick={() => console.log("clicked")} />
       </a>
-      <p className=" text-base">johndoe4@geilcom</p>
+      <p className=" text-base">johndoe@gmail.com</p>
       <strong className=" text-lg font-semibold">
         <p>+76 123456789</p>
       </strong>
