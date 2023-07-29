@@ -23,8 +23,6 @@ export default function Background() {
     let horizontal = Math.round(((xPosition / windowWidth).toFixed(2) as any) * 100)
     let vertical = Math.round(((yPosition / windowHeight).toFixed(2) as any) * 100)
 
-    console.log(`viewBox ${-100 + horizontal} ${50 + horizontal} ${1750 + vertical} ${950 + vertical}`)
-
     mouseX.set(-100 + horizontal)
     mouseY.set(1750 + vertical)
     mouseA.set(0 + horizontal)
@@ -32,9 +30,9 @@ export default function Background() {
   }
 
   return (
-    <div className="group">
+    <div className="">
       <div onMouseMove={handleMouseMove} className=" fixed bottom-0 left-0 right-0 top-0 z-0 justify-center"></div>
-      <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center transition duration-1000 group-hover:opacity-100 sm:opacity-0 md:left-0">
+      <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center transition duration-1000 group-hover/section:opacity-100 sm:opacity-0 md:left-0">
         <motion.svg
           transition={{ type: "inertia" }}
           viewBox={useMotionTemplate`${springX} ${springA} ${springY} ${springB}`}
