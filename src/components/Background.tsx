@@ -12,7 +12,6 @@ export default function Background() {
   const springB = useSpring(mouseB, { stiffness: 1000, damping: 100 })
 
   function handleMouseMove({ clientX, clientY, currentTarget }: MouseEvent) {
-    console.log("triggered")
     let { left, top } = currentTarget.getBoundingClientRect()
 
     let windowWidth = window.innerWidth
