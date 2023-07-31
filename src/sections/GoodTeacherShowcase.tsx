@@ -19,13 +19,23 @@ import Tooltip from "../components/Tooltip"
 
 export default function GoodTeacherShowcase() {
   return (
-    <div className=" left-0 top-0 flex max-h-[100vh] flex-1 flex-row justify-between gap-12 overflow-hidden p-12 text-gt-blue-dark">
+    <div className=" left-0 top-0 flex max-h-[100vh] flex-1 flex-row justify-between gap-12 p-12 text-gt-blue-dark">
       <div className=" h-100% flex w-8/12 flex-row flex-wrap items-center justify-around rounded-3xl bg-opacity-40 md:gap-x-20">
-        <img src={register} className="max-h-[40%] w-auto object-contain drop-shadow-lg"></img>
-        <img src={classes} className="max-h-[40%] w-auto object-contain drop-shadow-lg"></img>
-        <img src={students} className="max-h-[40%] w-auto object-contain drop-shadow-lg"></img>
-        <img src={drawer} className="max-h-[40%] w-auto object-contain drop-shadow-lg"></img>
-        <img src={tasks} className="max-h-[40%] w-auto object-contain drop-shadow-lg"></img>
+        <img
+          src={register}
+          className="h-[40%] w-auto scale-100 object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+        <img
+          src={classes}
+          className="max-h-[40%] w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+        <img
+          src={students}
+          className="max-h-[40%] w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+        <img
+          src={drawer}
+          className="max-h-[40%] w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+        <img
+          src={tasks}
+          className="max-h-[40%] w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
       </div>
       <div className="w-100% flex w-4/12 flex-col justify-between gap-12 rounded-3xl">
         <img src={gt_logo} className=" w-full rounded-3xl"></img>

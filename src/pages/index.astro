@@ -19,7 +19,7 @@ import NewHomeShowcase from '../sections/NewHomeShowcase'
 		<section id="landing" class="group/section flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1800px]">
 			<GoodTeacherShowcase/>
 		</section>
-		<section id="landing" class="group/section flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1800px]">
+		<section id="landing" class="group/section flex flex-col justify-between items-center max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey">
 			<NewHomeShowcase/>
 		</section>
 		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1300px]">
@@ -49,6 +49,7 @@ window.onbeforeunload = function () {
 		animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+		overflow: hidden;
 	
 		@media (min-width: 768px) {
 			max-height:100vh
