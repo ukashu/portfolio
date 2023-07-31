@@ -1,7 +1,42 @@
 import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion"
-import type { MouseEvent } from "react"
+import { MouseEvent, useState, useEffect } from "react"
 
 export default function Background() {
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll)
+    return () => window.removeEventListener("scroll", listenToScroll)
+  }, [])
+
+  let color1R = useMotionValue(75)
+  const springColor1R = useSpring(color1R, { stiffness: 1000, damping: 100 })
+  let color1B = useMotionValue(111)
+  const springColor1B = useSpring(color1B, { stiffness: 1000, damping: 100 })
+  let color2R = useMotionValue(20)
+  const springColor2R = useSpring(color2R, { stiffness: 1000, damping: 100 })
+  let color2B = useMotionValue(77)
+  const springColor2B = useSpring(color2B, { stiffness: 1000, damping: 100 })
+
+  const listenToScroll = () => {
+    let heightToHideFrom = Math.floor(window.innerHeight / 2)
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop
+
+    if (winScroll > heightToHideFrom) {
+      color1R.set(200)
+      color1B.set(20)
+      color2R.set(99)
+      color2B.set(12)
+      document.body.style.backgroundColor = "rgb(153, 212, 255)"
+      document.body.style.color = "rgb(48,131,255)"
+    } else {
+      color1R.set(75)
+      color1B.set(111)
+      color2R.set(20)
+      color2B.set(77)
+      document.body.style.backgroundColor = "#292929"
+      document.body.style.color = "#FCFF74"
+    }
+  }
+
   let mouseX = useMotionValue(-50)
   const springX = useSpring(mouseX, { stiffness: 1000, damping: 100 })
   let mouseY = useMotionValue(1800)
@@ -30,7 +65,7 @@ export default function Background() {
   }
 
   return (
-    <div className="">
+    <div id="hide">
       <div onMouseMove={handleMouseMove} className=" fixed bottom-0 left-0 right-0 top-0 z-0 justify-center"></div>
       <div className=" fixed bottom-0 left-[calc(100%-800px)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center transition duration-1000 group-hover/section:opacity-100 sm:opacity-0 md:left-0">
         <motion.svg
@@ -62,8 +97,8 @@ export default function Background() {
               <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_22_31" />
             </filter>
             <linearGradient id="paint0_linear_22_31" x1="669" y1="311" x2="669" y2="861" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#4B006F" />
-              <stop offset="1" stopColor="#14004D" />
+              <motion.stop stopColor={useMotionTemplate`rgb(${color1R},0,${springColor1B})`} />
+              <motion.stop offset="1" stopColor={useMotionTemplate`rgb(${springColor2R},0,${springColor2B})`} />
             </linearGradient>
             <linearGradient
               id="paint1_linear_22_31"
@@ -72,8 +107,12 @@ export default function Background() {
               x2="1379"
               y2="246"
               gradientUnits="userSpaceOnUse">
-              <stop stopColor="#14004D" />
-              <stop offset="1" stopColor="#4B006F" stopOpacity="0.68" />
+              <motion.stop stopColor={useMotionTemplate`rgb(${springColor2R},0,${springColor2B})`} />
+              <motion.stop
+                offset="1"
+                stopColor={useMotionTemplate`rgb(${springColor1R},0,${springColor1B})`}
+                stopOpacity="0.68"
+              />
             </linearGradient>
           </defs>
         </motion.svg>

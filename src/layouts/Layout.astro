@@ -30,13 +30,15 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #292929;
 		background-size: 224px;
-		scroll-snap-type: y mandatory;
 		overflow-y: scroll;
 		height: 100vh;
 		-ms-overflow-style: none;  /* IE and Edge */
   	scrollbar-width: none;  /* Firefox */
+
+		@media (min-width: 768px) {
+			scroll-snap-type: y mandatory;
+		}
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
@@ -47,6 +49,8 @@ const { title } = Astro.props;
 		animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+		background: #292929;
+		color: #FCFF74;
   }
 	@keyframes fadeInAnimation {
     0% {

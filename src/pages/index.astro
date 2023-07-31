@@ -21,21 +21,22 @@ import Main from '../components/Main'
 		</section>
 	</div>	
 </Layout>
+<script>
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
 
 <style>
-	#landing {
+
+	section {
 		margin: auto;
 		padding: 1rem;
 		width: 1300px;
 		max-width: calc(100% - 2rem);
 		min-height: 100vh;
-		color: #FCFF74;
 		font-size: 20px;
 		line-height: 1.6;
-	}
-
-	section {
-		height: 100vh;
 		scroll-snap-align: start;
 	}
 </style>
