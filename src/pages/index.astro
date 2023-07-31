@@ -4,20 +4,19 @@ import Header from '../components/Header';
 import Background from '../components/Background';
 import Footer from '../components/Footer'
 import Main from '../components/Main'
+import GoodTeacherShowcase from '../sections/GoodTeacherShowcase'
 ---
 
 <Layout title="ukashu dev">
 	<div class="group/section">
 		<Background client:load/>
-		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey">
+		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey w-[1300px]">
 			<Header client:load/>
 			<Main/>
 			<Footer/>
 		</section>
 		<section id="landing" class="group/section flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey">
-			<Header client:load/>
-			<Main/>
-			<Footer/>
+			<GoodTeacherShowcase/>
 		</section>
 	</div>	
 </Layout>
@@ -32,7 +31,6 @@ window.onbeforeunload = function () {
 	section {
 		margin: auto;
 		padding: 1rem;
-		width: 1300px;
 		max-width: calc(100% - 2rem);
 		min-height: 100vh;
 		font-size: 20px;

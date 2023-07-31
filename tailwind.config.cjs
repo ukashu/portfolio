@@ -9,7 +9,11 @@ module.exports = {
       darkblue: "#01003A",
       yellow: "#FCFF74",
       offwhite: "#E6E6E6",
-      mediumgrey: "#292929"
+      mediumgrey: "#292929",
+      "gt-blue-dark": "#2563EB",
+      "gt-blue-light": "#99D4FF",
+      "gt-red-light": "#FF0000",
+      "gt-red-dark": "#CC0000"
     }
   },
   plugins: []
