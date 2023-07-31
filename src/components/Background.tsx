@@ -9,9 +9,13 @@ export default function Background() {
 
   let color1R = useMotionValue(75)
   const springColor1R = useSpring(color1R, { stiffness: 1000, damping: 100 })
+  let color1G = useMotionValue(0)
+  const springColor1G = useSpring(color1G, { stiffness: 1000, damping: 100 })
   let color1B = useMotionValue(111)
   const springColor1B = useSpring(color1B, { stiffness: 1000, damping: 100 })
-  let color2R = useMotionValue(20)
+  let color2G = useMotionValue(0)
+  const springColor2G = useSpring(color2G, { stiffness: 1000, damping: 100 })
+  let color2R = useMotionValue(75)
   const springColor2R = useSpring(color2R, { stiffness: 1000, damping: 100 })
   let color2B = useMotionValue(77)
   const springColor2B = useSpring(color2B, { stiffness: 1000, damping: 100 })
@@ -20,17 +24,30 @@ export default function Background() {
     let heightToHideFrom = Math.floor(window.innerHeight / 2)
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
-    if (winScroll > heightToHideFrom) {
+    if (winScroll > heightToHideFrom * 3) {
+      color1R.set(96)
+      color1G.set(96)
+      color1B.set(96)
+      color2R.set(228)
+      color2G.set(228)
+      color2B.set(231)
+      document.body.style.backgroundColor = "rgb(52, 52, 52)"
+      document.body.style.color = "rgb(228,228,231)"
+    } else if (winScroll > heightToHideFrom) {
       color1R.set(200)
+      color1G.set(0)
       color1B.set(20)
       color2R.set(99)
+      color2G.set(0)
       color2B.set(12)
       document.body.style.backgroundColor = "rgb(153, 212, 255)"
       document.body.style.color = "rgb(48,131,255)"
     } else {
       color1R.set(75)
+      color1G.set(0)
       color1B.set(111)
       color2R.set(20)
+      color2G.set(0)
       color2B.set(77)
       document.body.style.backgroundColor = "#292929"
       document.body.style.color = "#FCFF74"
@@ -38,13 +55,13 @@ export default function Background() {
   }
 
   let mouseX = useMotionValue(-50)
-  const springX = useSpring(mouseX, { stiffness: 100, damping: 100 })
+  const springX = useSpring(mouseX, { stiffness: 200, damping: 100 })
   let mouseY = useMotionValue(1800)
-  const springY = useSpring(mouseY, { stiffness: 100, damping: 100 })
+  const springY = useSpring(mouseY, { stiffness: 200, damping: 100 })
   let mouseA = useMotionValue(50)
-  const springA = useSpring(mouseA, { stiffness: 100, damping: 100 })
+  const springA = useSpring(mouseA, { stiffness: 200, damping: 100 })
   let mouseB = useMotionValue(1000)
-  const springB = useSpring(mouseB, { stiffness: 100, damping: 100 })
+  const springB = useSpring(mouseB, { stiffness: 200, damping: 100 })
 
   function handleMouseMove({ clientX, clientY, currentTarget }: MouseEvent) {
     let { left, top } = currentTarget.getBoundingClientRect()
@@ -97,8 +114,11 @@ export default function Background() {
               <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_22_31" />
             </filter>
             <linearGradient id="paint0_linear_22_31" x1="669" y1="311" x2="669" y2="861" gradientUnits="userSpaceOnUse">
-              <motion.stop stopColor={useMotionTemplate`rgb(${color1R},0,${springColor1B})`} />
-              <motion.stop offset="1" stopColor={useMotionTemplate`rgb(${springColor2R},0,${springColor2B})`} />
+              <motion.stop stopColor={useMotionTemplate`rgb(${springColor1R},${springColor1G},${springColor1B})`} />
+              <motion.stop
+                offset="1"
+                stopColor={useMotionTemplate`rgb(${springColor2R},${springColor2G},${springColor2B})`}
+              />
             </linearGradient>
             <linearGradient
               id="paint1_linear_22_31"
@@ -107,10 +127,10 @@ export default function Background() {
               x2="1379"
               y2="246"
               gradientUnits="userSpaceOnUse">
-              <motion.stop stopColor={useMotionTemplate`rgb(${springColor2R},0,${springColor2B})`} />
+              <motion.stop stopColor={useMotionTemplate`rgb(${springColor2R},${springColor2G},${springColor2B})`} />
               <motion.stop
                 offset="1"
-                stopColor={useMotionTemplate`rgb(${springColor1R},0,${springColor1B})`}
+                stopColor={useMotionTemplate`rgb(${springColor1R},${springColor1G},${springColor1B})`}
                 stopOpacity="0.68"
               />
             </linearGradient>

@@ -13,7 +13,10 @@ module.exports = {
       "gt-blue-dark": "#2563EB",
       "gt-blue-light": "#99D4FF",
       "gt-red-light": "#FF0000",
-      "gt-red-dark": "#CC0000"
+      "gt-red-dark": "#CC0000",
+      "nh-grey-light": "#343434",
+      "nh-grey-dark": "#111111",
+      "nh-white": "#E4E4E7"
     }
   },
   plugins: []
