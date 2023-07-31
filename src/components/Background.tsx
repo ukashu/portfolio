@@ -38,13 +38,13 @@ export default function Background() {
   }
 
   let mouseX = useMotionValue(-50)
-  const springX = useSpring(mouseX, { stiffness: 1000, damping: 100 })
+  const springX = useSpring(mouseX, { stiffness: 100, damping: 100 })
   let mouseY = useMotionValue(1800)
-  const springY = useSpring(mouseY, { stiffness: 1000, damping: 100 })
+  const springY = useSpring(mouseY, { stiffness: 100, damping: 100 })
   let mouseA = useMotionValue(50)
-  const springA = useSpring(mouseA, { stiffness: 1000, damping: 100 })
+  const springA = useSpring(mouseA, { stiffness: 100, damping: 100 })
   let mouseB = useMotionValue(1000)
-  const springB = useSpring(mouseB, { stiffness: 1000, damping: 100 })
+  const springB = useSpring(mouseB, { stiffness: 100, damping: 100 })
 
   function handleMouseMove({ clientX, clientY, currentTarget }: MouseEvent) {
     let { left, top } = currentTarget.getBoundingClientRect()

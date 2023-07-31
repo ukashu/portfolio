@@ -4,6 +4,18 @@ import students from "../images/students.jpg"
 import drawer from "../images/drawer.jpg"
 import tasks from "../images/tasks.jpg"
 import gt_logo from "../images/gt_logo.svg"
+import {
+  SiExpress,
+  SiPrisma,
+  SiTypescript,
+  SiNodedotjs,
+  SiReact,
+  SiPostgresql,
+  SiTailwindcss,
+  SiExpo,
+  SiI18Next
+} from "react-icons/si/index.js"
+import Tooltip from "../components/Tooltip"
 
 export default function GoodTeacherShowcase() {
   return (
@@ -17,19 +29,19 @@ export default function GoodTeacherShowcase() {
       </div>
       <div className="w-100% flex w-4/12 flex-col justify-between gap-12 rounded-3xl">
         <img src={gt_logo} className=" w-full rounded-3xl"></img>
-        <div className=" w-100% flex flex-grow flex-col justify-between rounded-3xl bg-gt-blue-light bg-opacity-40 p-6">
-          <h1 className=" text-center text-xl">Online student notebook replacement.</h1>
+        <div className=" w-100% flex flex-grow flex-col justify-around rounded-3xl bg-gt-blue-light bg-opacity-80 p-6">
           <div>
+            <h1 className=" pb-6 text-center text-xl font-semibold">Online student notebook replacement.</h1>
             <p className=" text-base">
-              Mobile app goodteacher is an online replacement for a student notebook. It's made for teachers and
-              students, primarily with music schools in mind, but it can be used in any field. Teachers can create
-              classes, add students to them and send out tasks for students. The students can join classes and manage
-              their tasks - complete or add more of them. It is a mobile application written in React Native with a
-              Node.js server and a database.
+              Mobile app <strong className=" text-gt-red-light">goodteacher</strong> is an online replacement for a
+              student notebook. It's made for teachers and students, primarily with music schools in mind, but it can be
+              used in any field. Teachers can create classes, add students to them and send out tasks for students. The
+              students can join classes and manage their tasks - complete or add more of them. It is a mobile
+              application written in React Native with a Node.js server and a database.
             </p>
           </div>
           <div>
-            <h1 className=" text-xl">Features:</h1>
+            <h1 className=" text-xl font-semibold">Features:</h1>
             <ul className=" text-base">
               <li>- teacher or student account type</li>
               <li>- account activation through email</li>
@@ -41,8 +53,37 @@ export default function GoodTeacherShowcase() {
             </ul>
           </div>
         </div>
-        <div className=" w-100% flex-grow rounded-3xl bg-gt-blue-light bg-opacity-40 p-6">
-          <h1>Tech used:</h1>
+        <div className=" w-100% flex flex-col gap-3 rounded-3xl bg-gt-blue-light bg-opacity-80 p-6">
+          <h1 className=" font-semibold">Tech used:</h1>
+          <div className=" flex flex-grow flex-row flex-wrap items-center justify-center gap-3 sm:gap-3">
+            <Tooltip message="TypeScript">
+              <SiTypescript size="2em" />
+            </Tooltip>
+            <Tooltip message="NodeJS">
+              <SiNodedotjs size="2em" />
+            </Tooltip>
+            <Tooltip message="ExpressJS">
+              <SiExpress size="2em" />
+            </Tooltip>
+            <Tooltip message="React Native">
+              <SiReact size="2em" />
+            </Tooltip>
+            <Tooltip message="Expo">
+              <SiExpo size="2em" />
+            </Tooltip>
+            <Tooltip message="PostgreSQL">
+              <SiPostgresql size="2em" />
+            </Tooltip>
+            <Tooltip message="Prisma">
+              <SiPrisma size="2em" />
+            </Tooltip>
+            <Tooltip message="Tailwind">
+              <SiTailwindcss size="2em" />
+            </Tooltip>
+            <Tooltip message="i18n">
+              <SiI18Next size="2em" />
+            </Tooltip>
+          </div>
         </div>
       </div>
     </div>

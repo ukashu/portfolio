@@ -10,15 +10,15 @@ import GoodTeacherShowcase from '../sections/GoodTeacherShowcase'
 <Layout title="ukashu dev">
 	<div class="group/section">
 		<Background client:load/>
-		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey w-[1300px]">
+		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1300px]">
 			<Header client:load/>
 			<Main/>
 			<Footer/>
 		</section>
-		<section id="landing" class="group/section flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey">
+		<section id="landing" class="group/section flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1800px]">
 			<GoodTeacherShowcase/>
 		</section>
-		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey w-[1300px]">
+		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1300px]">
 			<Header client:load/>
 			<Main/>
 			<Footer/>
@@ -33,6 +33,7 @@ window.onbeforeunload = function () {
 
 <style>
 
+
 	section {
 		margin: auto;
 		padding: 1rem;
@@ -41,8 +42,21 @@ window.onbeforeunload = function () {
 		font-size: 20px;
 		line-height: 1.6;
 		scroll-snap-align: start;
+		animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+	
 		@media (min-width: 768px) {
 			max-height:100vh
 		}
+	}
+
+	@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 	}
 </style>
