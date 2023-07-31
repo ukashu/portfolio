@@ -18,6 +18,11 @@ import GoodTeacherShowcase from '../sections/GoodTeacherShowcase'
 		<section id="landing" class="group/section flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey">
 			<GoodTeacherShowcase/>
 		</section>
+		<section id="landing" class=" flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey w-[1300px]">
+			<Header client:load/>
+			<Main/>
+			<Footer/>
+		</section>
 	</div>	
 </Layout>
 <script>
@@ -36,5 +41,8 @@ window.onbeforeunload = function () {
 		font-size: 20px;
 		line-height: 1.6;
 		scroll-snap-align: start;
+		@media (min-width: 768px) {
+			max-height:100vh
+		}
 	}
 </style>
