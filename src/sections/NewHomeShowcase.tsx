@@ -1,12 +1,12 @@
 import newHomeShowcase from "../images/newHomeShowcase.png"
 import nh_logo from "../images/nh_logo.svg"
-import { SiTypescript, SiReact, SiTailwindcss, SiUndertale } from "react-icons/si/index.js"
+import { SiTypescript, SiReact, SiTailwindcss, SiUndertale, SiGithub } from "react-icons/si/index.js"
 import Tooltip from "../components/Tooltip"
 
 export default function NewHomeShowcase() {
   return (
     <div className=" left-0 top-0 flex max-h-[100vh] max-w-[1800px] flex-1 flex-row justify-between gap-12 p-12">
-      <div className=" h-100% bg-transparent flex w-8/12 flex-row flex-wrap items-center justify-around rounded-3xl">
+      <div className=" bg-transparent flex w-8/12 flex-row flex-wrap items-center justify-around rounded-3xl">
         <img
           src={newHomeShowcase}
           className="h-auto max-w-[100%] rounded-xl object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
@@ -32,6 +32,9 @@ export default function NewHomeShowcase() {
               <li>- daily browsing time state</li>
             </ul>
           </div>
+          <Tooltip message="Check out the project repository on GitHub!">
+            <SiGithub size="2em" />
+          </Tooltip>
         </div>
         <div className=" flex w-full flex-col gap-3 rounded-3xl bg-nh-grey-light bg-opacity-80 p-6">
           <h1 className=" font-semibold">Tech used:</h1>
