@@ -34,7 +34,9 @@ const { title } = Astro.props;
 		background-size: 224px;
 		scroll-snap-type: y mandatory;
 		overflow-y: scroll;
-		height:100vh;
+		height: 100vh;
+		-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
@@ -53,5 +55,8 @@ const { title } = Astro.props;
     100% {
         opacity: 1;
      }
-	}	
+	}
+	::-webkit-scrollbar {
+  display: none;
+	}
 </style>
