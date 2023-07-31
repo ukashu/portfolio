@@ -13,6 +13,11 @@ import Main from '../components/Main'
 		<Main/>
 		<Footer/>
 	</section>
+	<section id="landing" class="group/section flex flex-col justify-between max-sm:p-0 selection:bg-offwhite selection:text-mediumgrey">
+		<Header client:load/>
+		<Main/>
+		<Footer/>
+	</section>
 </Layout>
 
 <style>
@@ -25,5 +30,10 @@ import Main from '../components/Main'
 		color: #FCFF74;
 		font-size: 20px;
 		line-height: 1.6;
+	}
+
+	section {
+		height: 100vh;
+		scroll-snap-align: start;
 	}
 </style>
