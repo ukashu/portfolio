@@ -44,11 +44,14 @@ export default function GoodTeacherShowcase() {
           <div>
             <h1 className=" pb-6 text-center text-xl font-semibold">Online student notebook replacement.</h1>
             <p className=" text-base">
-              Mobile app <strong className=" text-gt-red-light">goodteacher</strong> is an online replacement for a
-              student notebook. It's made for teachers and students, primarily with music schools in mind, but it can be
-              used in any field. Teachers can create classes, add students to them and send out tasks for students. The
-              students can join classes and manage their tasks - complete or add more of them. It is a mobile
-              application written in React Native with a Node.js server and a database.
+              Mobile app{" "}
+              <strong className=" text-gt-red-light">
+                <strong className=" text-gt-red-light">good</strong>teacher
+              </strong>{" "}
+              is an online replacement for a student notebook. It's made for teachers and students, primarily with music
+              schools in mind, but it can be used in any field. Teachers can create classes, add students to them and
+              send out tasks for students. The students can join classes and manage their tasks - complete or add more
+              of them. It is a mobile application written in React Native with a Node.js server and a database.
             </p>
           </div>
           <div>
