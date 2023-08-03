@@ -12,11 +12,15 @@ export default function Main() {
       <div className=" z-10">
         <p className="mb-2 text-center text-3xl font-semibold">My projects</p>
         <ul className=" list-disc text-left text-lg">
-          <li className="underline">
-            <button onClick={() => scrolll("gt")}>goodteacher mobile app</button>
+          <li>
+            <button className="underline" onClick={() => scrolll("gt")}>
+              goodteacher mobile app
+            </button>
           </li>
-          <li className="underline">
-            <button onClick={() => scrolll("nh")}>NewHome chromium extension</button>
+          <li>
+            <button className="underline" onClick={() => scrolll("nh")}>
+              NewHome chromium extension
+            </button>
           </li>
           <li className="underline">ecommerce website</li>
         </ul>

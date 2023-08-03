@@ -20,27 +20,27 @@ import Tooltip from "../components/Tooltip"
 
 export default function GoodTeacherShowcase() {
   return (
-    <div className=" left-0 top-0 flex max-h-[95vh] flex-1 flex-row justify-between gap-12 p-12 text-gt-blue-dark">
-      <div className=" flex w-8/12 flex-row flex-wrap items-center justify-around rounded-3xl bg-opacity-40 md:gap-x-20">
+    <div className="left-0 top-0 flex min-h-[95vh] flex-1 flex-col justify-between gap-1 p-1 text-gt-blue-dark md:flex-row md:gap-10 md:p-10">
+      <div className="w-100% flex max-h-[90vh] flex-row flex-wrap items-center justify-around rounded-3xl bg-opacity-40 md:w-8/12 md:gap-x-20">
         <img
           src={register}
-          className="h-[40%] w-auto scale-100 rounded-xl object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={classes}
-          className="max-h-[40%] w-auto rounded-xl object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={students}
-          className="max-h-[40%] w-auto rounded-xl object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={drawer}
-          className="max-h-[40%] w-auto rounded-xl object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={tasks}
-          className="max-h-[40%] w-auto rounded-xl object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150"></img>
+          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
       </div>
-      <div className="w-100% flex w-4/12 flex-col justify-between gap-12 rounded-3xl">
+      <div className="w-100% flex flex-col justify-between gap-12 rounded-3xl md:w-4/12">
         <img src={gt_logo} className=" w-full rounded-3xl"></img>
-        <div className=" w-100% flex flex-grow flex-col justify-around rounded-3xl bg-gt-blue-light bg-opacity-80 p-6">
+        <div className=" w-100% flex flex-grow flex-col justify-around rounded-3xl bg-gt-blue-light bg-opacity-80 p-2 md:p-6">
           <div>
             <h1 className=" pb-6 text-center text-xl font-semibold">Online student notebook replacement.</h1>
             <p className=" text-base">
@@ -70,7 +70,7 @@ export default function GoodTeacherShowcase() {
             <SiGithub size="2em" />
           </Tooltip>
         </div>
-        <div className=" w-100% flex flex-col gap-3 rounded-3xl bg-gt-blue-light bg-opacity-80 p-6">
+        <div className=" w-100% flex flex-col gap-3 rounded-3xl bg-gt-blue-light bg-opacity-80 p-2 md:p-6">
           <h1 className=" font-semibold">Tech used:</h1>
           <div className=" flex flex-grow flex-row flex-wrap items-center justify-center gap-3 sm:gap-3">
             <Tooltip message="TypeScript">

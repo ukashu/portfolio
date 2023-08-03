@@ -13,18 +13,25 @@ export default function Background() {
   const springColor1G = useSpring(color1G, { stiffness: 1000, damping: 100 })
   let color1B = useMotionValue(111)
   const springColor1B = useSpring(color1B, { stiffness: 1000, damping: 100 })
+  let color2R = useMotionValue(20)
+  const springColor2R = useSpring(color2R, { stiffness: 1000, damping: 100 })
   let color2G = useMotionValue(0)
   const springColor2G = useSpring(color2G, { stiffness: 1000, damping: 100 })
-  let color2R = useMotionValue(75)
-  const springColor2R = useSpring(color2R, { stiffness: 1000, damping: 100 })
   let color2B = useMotionValue(77)
   const springColor2B = useSpring(color2B, { stiffness: 1000, damping: 100 })
 
   const listenToScroll = () => {
     let heightToHideFrom = Math.floor(window.innerHeight / 2)
+
+    let sectionOne = document.getElementById("landing")!.offsetHeight
+    let sectionTwo = document.getElementById("gt")!.offsetHeight
+    let sectionThree = document.getElementById("nh")!.offsetHeight
+
+    console.log({ sectionOne, sectionTwo, sectionThree })
+
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
-    if (winScroll > heightToHideFrom * 3) {
+    if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
       color1R.set(96)
       color1G.set(96)
       color1B.set(96)
@@ -33,7 +40,7 @@ export default function Background() {
       color2B.set(231)
       document.body.style.backgroundColor = "rgb(52, 52, 52)"
       document.body.style.color = "rgb(228,228,231)"
-    } else if (winScroll > heightToHideFrom) {
+    } else if (winScroll > Math.floor(sectionOne / 2)) {
       color1R.set(200)
       color1G.set(0)
       color1B.set(20)
