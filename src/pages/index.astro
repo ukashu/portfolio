@@ -9,13 +9,13 @@ import NewHomeShowcase from '../sections/NewHomeShowcase'
 <Layout title="ukashu dev">
 	<div class="group/section">
 		<Background client:load/>
-		<section id="landing" class=" flex flex-col justify-between max-md:p-1 p-8 selection:bg-offwhite selection:text-mediumgrey max-w-[1300px]">
+		<section id="landing" class=" flex flex-col justify-between max-lg:p-1 p-8 selection:bg-offwhite selection:text-mediumgrey max-w-[1300px]">
 			<LandingPage client:load/>
 		</section>
-		<section id="gt" class="group/section flex flex-col justify-between max-md:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1800px]">
+		<section id="gt" class="group/section flex flex-col justify-between max-lg:p-1 selection:bg-offwhite selection:text-mediumgrey max-w-[1800px]">
 			<GoodTeacherShowcase/>
 		</section>
-		<section id="nh" class="group/section flex flex-col justify-between max-md:p-0 selection:bg-offwhite selection:text-mediumgrey max-w-[1800px]">
+		<section id="nh" class="group/section flex flex-col justify-between max-lg:p-1 selection:bg-offwhite selection:text-mediumgrey max-w-[1800px]">
 			<NewHomeShowcase/>
 		</section>
 	</div>	
@@ -40,7 +40,7 @@ import NewHomeShowcase from '../sections/NewHomeShowcase'
 		animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-		overflow: hidden;
+		overflow: visible;
 	
 		/* @media (min-width: 1200px) {
 			max-height:100vh
