@@ -27,8 +27,6 @@ export default function Background() {
     let sectionTwo = document.getElementById("gt")!.offsetHeight
     let sectionThree = document.getElementById("nh")!.offsetHeight
 
-    console.log({ sectionOne, sectionTwo, sectionThree })
-
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
     if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {

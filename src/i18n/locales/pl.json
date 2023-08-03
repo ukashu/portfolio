@@ -1,0 +1,12 @@
+{
+  "landing": {
+    "title": "programista full-stack",
+    "myProjects": {
+      "title": "Projekty",
+      "gt": "goodteacher",
+      "nh": "NewHome",
+      "3": "ecommerce website"
+    },
+    "mySkills": "Używam:"
+  }
+}

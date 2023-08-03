@@ -16,12 +16,17 @@ import {
   SiGooglechrome
 } from "react-icons/si/index.js"
 
+import "../i18n/config"
+import { useTranslation } from "react-i18next"
+
 import Tooltip from "./Tooltip"
 
 export default function Footer() {
+  const { t } = useTranslation()
+
   return (
     <div className=" flex h-1/5 flex-col gap-4 overflow-hidden pb-28 max-[800px]:pb-20">
-      <p className=" font-semibold sm:ml-32">My skills:</p>
+      <p className=" font-semibold sm:ml-32">{t("landing.mySkills")}</p>
       <div className=" flex flex-row flex-wrap justify-center gap-3 sm:gap-5">
         <Tooltip message="TypeScript">
           <SiTypescript size="2em" />

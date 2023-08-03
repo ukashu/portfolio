@@ -1,0 +1,12 @@
+{
+  "landing": {
+    "title": "full-stack web developer",
+    "myProjects": {
+      "title": "My Projects",
+      "gt": "goodteacher mobile app",
+      "nh": "NewHome chromium extension",
+      "3": "ecommerce website"
+    },
+    "mySkills": "My Skills:"
+  }
+}
