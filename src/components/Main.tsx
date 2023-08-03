@@ -1,4 +1,8 @@
 export default function Main() {
+  function scrolll(id: string) {
+    document.querySelector(`#${id}`)!.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <main className=" flex h-3/5 flex-grow flex-col items-center justify-around px-6 sm:flex-row">
       <div className=" text-center">
@@ -8,9 +12,13 @@ export default function Main() {
       <div className=" z-10">
         <p className="mb-2 text-center text-3xl font-semibold">My projects</p>
         <ul className=" list-disc text-left text-lg">
+          <li className="underline">
+            <button onClick={() => scrolll("gt")}>goodteacher mobile app</button>
+          </li>
+          <li className="underline">
+            <button onClick={() => scrolll("nh")}>NewHome chromium extension</button>
+          </li>
           <li className="underline">ecommerce website</li>
-          <li className="underline">musicians website</li>
-          <li className="underline">goodteacher mobile app</li>
         </ul>
       </div>
     </main>
