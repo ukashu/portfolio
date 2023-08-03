@@ -20,7 +20,7 @@ import Tooltip from "../components/Tooltip"
 
 export default function GoodTeacherShowcase() {
   return (
-    <div className="left-0 top-0 flex min-h-[95vh] flex-1 flex-col justify-between gap-1 p-1 text-gt-blue-dark md:flex-row md:gap-10 md:p-10">
+    <div className="left-0 top-0 flex min-h-[95vh] flex-1 flex-col justify-between gap-1 p-1 text-gt-blue-dark max-md:pb-10 md:flex-row md:gap-10 md:p-10">
       <div className="w-100% flex max-h-[90vh] flex-row flex-wrap items-center justify-around rounded-3xl bg-opacity-40 md:w-8/12 md:gap-x-20">
         <img
           src={register}
