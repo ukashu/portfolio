@@ -29,7 +29,7 @@ export default function NewHomeShowcase() {
               <li>- Google Calendar API integration - current task</li>
               <li>- daily stoic quote from stoic quotes API</li>
               <li>- website shortcuts</li>
-              <li>- daily browsing time state</li>
+              <li>- daily browsing time</li>
             </ul>
           </div>
           <Tooltip message="Check out the project repository on GitHub!">
