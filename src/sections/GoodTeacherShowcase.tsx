@@ -28,19 +28,19 @@ export default function GoodTeacherShowcase() {
       <div className="w-100% flex max-h-[90vh] flex-row flex-wrap items-center justify-around rounded-xl bg-opacity-40 md:w-8/12 lg:gap-x-20 lg:rounded-3xl">
         <img
           src={register}
-          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
+          className="w-auto object-contain drop-shadow-lg duration-100 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={classes}
-          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
+          className="w-auto object-contain drop-shadow-lg duration-100 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={students}
-          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
+          className="w-auto object-contain drop-shadow-lg duration-100 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={drawer}
-          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
+          className="w-auto object-contain drop-shadow-lg duration-100 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
         <img
           src={tasks}
-          className="w-auto object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
+          className="w-auto object-contain drop-shadow-lg duration-100 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
       </div>
       <div className="w-100% flex flex-col justify-between gap-12 rounded-xl md:w-4/12 lg:rounded-3xl">
         <img src={gt_logo} className=" w-full rounded-3xl"></img>

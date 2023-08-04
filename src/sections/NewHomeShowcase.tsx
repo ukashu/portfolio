@@ -13,7 +13,7 @@ export default function NewHomeShowcase() {
       <div className=" bg-transparent w-100% flex flex-row flex-wrap items-center justify-around rounded-xl md:w-8/12 lg:gap-x-20 lg:rounded-3xl">
         <img
           src={newHomeShowcase}
-          className="h-auto max-w-[100%] object-contain drop-shadow-lg duration-200 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
+          className="h-auto max-w-[100%] object-contain drop-shadow-lg duration-100 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
       </div>
       <div className="w-100% flex flex-col justify-between gap-12 rounded-xl md:w-4/12 lg:rounded-3xl">
         <img src={nh_logo} className=" w-full rounded-3xl"></img>
