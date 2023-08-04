@@ -3,10 +3,43 @@
     "title": "programista full-stack",
     "myProjects": {
       "title": "Projekty",
-      "gt": "goodteacher",
-      "nh": "NewHome",
+      "gt": "aplikacja mobilna goodteacher",
+      "nh": "rozszerzenie NewHome",
       "3": "ecommerce website"
     },
     "mySkills": "Używam:"
+  },
+  "gt": {
+    "title": "Aplikacja która zastępuje zeszyt ucznia",
+    "description": {
+      "1": "Aplikacja mobilna",
+      "2": "to aplikacja która zastępuje zeszyt ucznia. Mogą z niej korzystać nauczyciele i uczniowie, w pierwotnym zamyśle szkół muzycznych, ale znajdzie ona zastosowanie też w innych rodzajach szkół. Nauczyciel może stworzyć klasę, dodać do niej uczniów i wysyłać im zadania do wykonania. Uczniowie mogą dołączać do klas (lub odrzucać zaproszenia) i zarządzać swoimi zadaniami."
+    },
+    "features": {
+      "title": "Funkcje:",
+      "1": "typ konta nauczyciel/uczeń",
+      "2": "aktywacja konta przez email",
+      "3": "zdalne nadawanie zadań uczniom",
+      "4": "dostęp do zadań offline",
+      "5": "zbudowano z myślą o bezpieczeństwie danych",
+      "6": "losowo generowane awatary ucznia",
+      "7": "dwa języki (PL, ENG)"
+    },
+    "techUsed": "Użyto:"
+  },
+  "nh": {
+    "title": "rozszerzenie Chromium służące poprawie produktywności",
+    "description": "Rozszerzenie Chromium zastępujące nową zakładkę w przeglądarce.",
+    "features": {
+      "title": "Funkcje:",
+      "1": "monitorowanie nawyków",
+      "2": "monitorowanie zadań",
+      "3": "integracja Spotify API -> obecnie odtwarzany utwór",
+      "4": "integracja Google Calendar API -> obecne zadanie",
+      "5": "codzienna stoicka fraza ze 'stoic quotes API'",
+      "6": "skróty stron",
+      "7": "monitorowanie czasu używania stron"
+    },
+    "techUsed": "Użyto:"
   }
 }

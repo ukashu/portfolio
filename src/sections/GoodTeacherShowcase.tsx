@@ -17,8 +17,12 @@ import {
   SiGithub
 } from "react-icons/si/index.js"
 import Tooltip from "../components/Tooltip"
+import "../i18n/config"
+import { useTranslation } from "react-i18next"
 
 export default function GoodTeacherShowcase() {
+  const { t } = useTranslation()
+
   return (
     <div className="left-0 top-0 flex min-h-[95vh] flex-1 flex-col justify-between gap-1 p-1 text-gt-blue-dark max-lg:pb-10 md:flex-row lg:gap-10 lg:p-10">
       <div className="w-100% flex max-h-[90vh] flex-row flex-wrap items-center justify-around rounded-xl bg-opacity-40 md:w-8/12 lg:gap-x-20 lg:rounded-3xl">
@@ -42,28 +46,25 @@ export default function GoodTeacherShowcase() {
         <img src={gt_logo} className=" w-full rounded-3xl"></img>
         <div className=" w-100% flex flex-grow flex-col justify-around rounded-xl bg-gt-blue-light bg-opacity-80 p-2 lg:rounded-3xl lg:p-6">
           <div>
-            <h1 className=" pb-6 text-center text-xl font-semibold">Online student notebook replacement.</h1>
+            <h1 className=" pb-6 text-center text-xl font-semibold">{t("gt.title")}</h1>
             <p className=" text-base">
-              Mobile app{" "}
+              {t("gt.description.1")}{" "}
               <strong className=" text-gt-red-light">
                 <strong className=" text-gt-red-light">good</strong>teacher
               </strong>{" "}
-              is an online replacement for a student notebook. It's made for teachers and students, primarily with music
-              schools in mind, but it can be used in any field. Teachers can create classes, add students to them and
-              send out tasks for students. The students can join classes and manage their tasks - complete or add more
-              of them. It is a mobile application written in React Native with a Node.js server and a database.
+              {t("gt.description.2")}
             </p>
           </div>
           <div>
-            <h1 className=" text-xl font-semibold">Features:</h1>
+            <h1 className=" text-xl font-semibold">{t("gt.features.title")}</h1>
             <ul className=" text-base">
-              <li>- teacher or student account type</li>
-              <li>- account activation through email</li>
-              <li>- remotely assigning tasks to students as a teacher</li>
-              <li>- offline access to tasks</li>
-              <li>- infrastructure designed with user data security in mind</li>
-              <li>- fun randomly generated student avatars</li>
-              <li>- two languages (PL, ENG)</li>
+              <li>- {t("gt.features.1")}</li>
+              <li>- {t("gt.features.2")}</li>
+              <li>- {t("gt.features.3")}</li>
+              <li>- {t("gt.features.4")}</li>
+              <li>- {t("gt.features.5")}</li>
+              <li>- {t("gt.features.6")}</li>
+              <li>- {t("gt.features.7")}</li>
             </ul>
           </div>
           <Tooltip message="Check out the project repository on GitHub!">
@@ -71,7 +72,7 @@ export default function GoodTeacherShowcase() {
           </Tooltip>
         </div>
         <div className=" w-100% flex flex-col gap-3 rounded-xl bg-gt-blue-light bg-opacity-80 p-2 lg:rounded-3xl lg:p-6">
-          <h1 className=" font-semibold">Tech used:</h1>
+          <h1 className=" font-semibold">{t("gt.techUsed")}</h1>
           <div className=" flex flex-grow flex-row flex-wrap items-center justify-center gap-3">
             <Tooltip message="TypeScript">
               <SiTypescript size="2em" />

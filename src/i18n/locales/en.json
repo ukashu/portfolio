@@ -8,5 +8,38 @@
       "3": "ecommerce website"
     },
     "mySkills": "My Skills:"
+  },
+  "gt": {
+    "title": "Online student notebook replacement",
+    "description": {
+      "1": "Mobile app",
+      "2": "is an online replacement for a student notebook. It's made for teachers and students, primarily with music schools in mind, but it can be used in any field. Teachers can create classes, add students to them and send out tasks for students. The students can join classes and manage their tasks - complete or add more of them. It is a mobile application written in React Native with a Node.js server and a database."
+    },
+    "features": {
+      "title": "Features:",
+      "1": "teacher or student account type",
+      "2": "account activation through email",
+      "3": "remotely assigning tasks to students as a teacher",
+      "4": "offline access to tasks",
+      "5": "infrastructure designed with user data security in mind",
+      "6": "fun randomly generated student avatars",
+      "7": "two languages (PL, ENG)"
+    },
+    "techUsed": "Tech used:"
+  },
+  "nh": {
+    "title": "Productivity focused Chromium extension",
+    "description": "Chromium extension replacing default new tab with custom productivity focused home.",
+    "features": {
+      "title": "Features:",
+      "1": "habit tracking",
+      "2": "task tracking",
+      "3": "Spotify API integration -> currently playing track",
+      "4": "Google Calendar API integration -> current task",
+      "5": "daily stoic phrase from stoic quotes API",
+      "6": "website shortcuts",
+      "7": "daily browsing time tracking"
+    },
+    "techUsed": "Tech used:"
   }
 }
