@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Background from '../components/Background';
+import ScrollIcon from '../components/ScrollIcon';
 import LandingPage from '../sections/LandingPage';
 import GoodTeacherShowcase from '../sections/GoodTeacherShowcase'
 import NewHomeShowcase from '../sections/NewHomeShowcase'
@@ -9,6 +10,7 @@ import NewHomeShowcase from '../sections/NewHomeShowcase'
 <Layout title="ukashu dev">
 	<div class="group/section">
 		<Background client:load/>
+		<ScrollIcon client:load/>
 		<section id="landing" class=" flex flex-col justify-between max-lg:p-1 p-8 selection:bg-offwhite selection:text-mediumgrey max-w-[1300px]">
 			<LandingPage client:load/>
 		</section>
