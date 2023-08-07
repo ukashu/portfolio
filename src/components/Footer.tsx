@@ -3,7 +3,7 @@ import {
   SiPrisma,
   SiLinux,
   SiTypescript,
-  SiJavascript,
+  SiJest,
   SiNodedotjs,
   SiReact,
   SiGit,
@@ -13,6 +13,7 @@ import {
   SiTailwindcss,
   SiHtml5,
   SiCss3,
+  SiWindows,
   SiGooglechrome
 } from "react-icons/si/index.js"
 
@@ -31,9 +32,6 @@ export default function Footer() {
         <Tooltip message="TypeScript">
           <SiTypescript size="2em" />
         </Tooltip>
-        <Tooltip message="JavaScript">
-          <SiJavascript size="2em" />
-        </Tooltip>
         <Tooltip message="NodeJS">
           <SiNodedotjs size="2em" />
         </Tooltip>
@@ -46,6 +44,9 @@ export default function Footer() {
         <Tooltip message="PostgreSQL">
           <SiPostgresql size="2em" />
         </Tooltip>
+        <Tooltip message="Prisma">
+          <SiPrisma size="2em" />
+        </Tooltip>
         <Tooltip message="TailwindCSS">
           <SiTailwindcss size="2em" />
         </Tooltip>
@@ -55,8 +56,8 @@ export default function Footer() {
         <Tooltip message="CSS3">
           <SiCss3 size="2em" />
         </Tooltip>
-        <Tooltip message="Prisma">
-          <SiPrisma size="2em" />
+        <Tooltip message="Jest">
+          <SiJest size="2em" />
         </Tooltip>
         <Tooltip message="Figma">
           <SiFigma size="2em" />
@@ -69,6 +70,9 @@ export default function Footer() {
         </Tooltip>
         <Tooltip message="Linux">
           <SiLinux size="2em" />
+        </Tooltip>
+        <Tooltip message="Windows">
+          <SiWindows size="2em" />
         </Tooltip>
         <Tooltip message="Chromium extensions">
           <SiGooglechrome size="2em" />
