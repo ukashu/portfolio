@@ -8,7 +8,8 @@ export default function ScrollIcon() {
     carets: "opacity-0",
     one: "opacity-0",
     two: "opacity-0",
-    three: "opacity-0"
+    three: "opacity-0",
+    four: "opacity-0"
   })
 
   useEffect(() => {
@@ -23,7 +24,18 @@ export default function ScrollIcon() {
 
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
-    if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
+    if (winScroll > sectionThree + sectionTwo + Math.floor(sectionOne / 2)) {
+      if (page.four === "opacity-100") {
+        return
+      }
+      setPage({
+        carets: "opacity-100",
+        one: "opacity-40",
+        two: "opacity-40",
+        three: "opacity-40",
+        four: "opacity-100"
+      })
+    } else if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
       if (page.three === "opacity-100") {
         return
       }
@@ -31,7 +43,8 @@ export default function ScrollIcon() {
         carets: "opacity-100",
         one: "opacity-40",
         two: "opacity-40",
-        three: "opacity-100"
+        three: "opacity-100",
+        four: "opacity-40"
       })
     } else if (winScroll > Math.floor(sectionOne / 2)) {
       if (page.two === "opacity-100") {
@@ -41,7 +54,8 @@ export default function ScrollIcon() {
         carets: "opacity-100",
         one: "opacity-40",
         two: "opacity-100",
-        three: "opacity-40"
+        three: "opacity-40",
+        four: "opacity-40"
       })
     } else {
       if (page.one === "opacity-100") {
@@ -51,7 +65,8 @@ export default function ScrollIcon() {
         carets: "opacity-0",
         one: "opacity-0",
         two: "opacity-0",
-        three: "opacity-0"
+        three: "opacity-0",
+        four: "opacity-0"
       })
     }
   }
@@ -71,6 +86,9 @@ export default function ScrollIcon() {
         <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("gt")} />
       </div>
       <div className={page.three}>
+        <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("nh")} />
+      </div>
+      <div className={page.four}>
         <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("nh")} />
       </div>
       <BsFillCaretDownFill size="1.2em" className={page.carets} onClick={() => scrollToSection("nh")} />

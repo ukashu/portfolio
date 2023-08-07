@@ -21,15 +21,22 @@ export default function Background() {
   const springColor2B = useSpring(color2B, { stiffness: 1000, damping: 100 })
 
   const listenToScroll = () => {
-    let heightToHideFrom = Math.floor(window.innerHeight / 2)
-
     let sectionOne = document.getElementById("landing")!.offsetHeight
     let sectionTwo = document.getElementById("gt")!.offsetHeight
     let sectionThree = document.getElementById("nh")!.offsetHeight
 
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
-    if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
+    if (winScroll > sectionThree + sectionTwo + Math.floor(sectionOne / 2)) {
+      color1R.set(75)
+      color1G.set(0)
+      color1B.set(111)
+      color2R.set(20)
+      color2G.set(0)
+      color2B.set(77)
+      document.body.style.backgroundColor = "#292929"
+      document.body.style.color = "#FCFF74"
+    } else if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
       color1R.set(96)
       color1G.set(96)
       color1B.set(96)
