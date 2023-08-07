@@ -63,7 +63,7 @@ export default function ScrollIcon() {
 
   return (
     <div className="invisible fixed right-4 top-[calc(50%-5em)] z-30 flex cursor-pointer flex-col items-center gap-1 opacity-0 transition duration-300 group-hover/section:opacity-100 lg:visible">
-      <BsFillCaretUpFill size="1.5em" className={page.carets} onClick={() => scrollToSection("landing")} />
+      <BsFillCaretUpFill size="1.2em" className={page.carets} onClick={() => scrollToSection("landing")} />
       <div className={page.one}>
         <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("landing")} />
       </div>
@@ -73,7 +73,7 @@ export default function ScrollIcon() {
       <div className={page.three}>
         <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("nh")} />
       </div>
-      <BsFillCaretDownFill size="1.5em" className={page.carets} onClick={() => scrollToSection("nh")} />
+      <BsFillCaretDownFill size="1.2em" className={page.carets} onClick={() => scrollToSection("nh")} />
     </div>
   )
 }
