@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 export default function Main() {
   const { t } = useTranslation()
 
-  function scrolll(id: string) {
+  function scrollToSection(id: string) {
     document.querySelector(`#${id}`)!.scrollIntoView({ behavior: "smooth" })
   }
 
@@ -18,12 +18,12 @@ export default function Main() {
         <p className="mb-2 text-center text-3xl font-semibold">{t("landing.myProjects.title")}</p>
         <ul className=" list-disc text-left text-lg">
           <li>
-            <button className="underline" onClick={() => scrolll("gt")}>
+            <button className="underline" onClick={() => scrollToSection("gt")}>
               {t("landing.myProjects.gt")}
             </button>
           </li>
           <li>
-            <button className="underline" onClick={() => scrolll("nh")}>
+            <button className="underline" onClick={() => scrollToSection("nh")}>
               {t("landing.myProjects.nh")}
             </button>
           </li>
