@@ -5,9 +5,10 @@ import { useState, useEffect } from "react"
 
 export default function ScrollIcon() {
   const [page, setPage] = useState({
-    one: "opacity-100",
-    two: "opacity-40",
-    three: "opacity-40"
+    carets: "opacity-0",
+    one: "opacity-0",
+    two: "opacity-0",
+    three: "opacity-0"
   })
 
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function ScrollIcon() {
         return
       }
       setPage({
+        carets: "opacity-100",
         one: "opacity-40",
         two: "opacity-40",
         three: "opacity-100"
@@ -36,6 +38,7 @@ export default function ScrollIcon() {
         return
       }
       setPage({
+        carets: "opacity-100",
         one: "opacity-40",
         two: "opacity-100",
         three: "opacity-40"
@@ -45,16 +48,17 @@ export default function ScrollIcon() {
         return
       }
       setPage({
-        one: "opacity-100",
-        two: "opacity-40",
-        three: "opacity-40"
+        carets: "opacity-0",
+        one: "opacity-0",
+        two: "opacity-0",
+        three: "opacity-0"
       })
     }
   }
 
   return (
-    <div className="fixed right-4 top-[calc(50%-5em)] flex flex-col items-center gap-1">
-      <BsFillCaretUpFill size="1.5em" />
+    <div className="invisible fixed right-4 top-[calc(50%-5em)] flex flex-col items-center gap-1 opacity-0 transition duration-300 group-hover/section:opacity-100 lg:visible">
+      <BsFillCaretUpFill size="1.5em" className={page.carets} />
       <div className={page.one}>
         <BsFillCircleFill size="0.7em" />
       </div>
@@ -64,7 +68,7 @@ export default function ScrollIcon() {
       <div className={page.three}>
         <BsFillCircleFill size="0.7em" />
       </div>
-      <BsFillCaretDownFill size="1.5em" />
+      <BsFillCaretDownFill size="1.5em" className={page.carets} />
     </div>
   )
 }

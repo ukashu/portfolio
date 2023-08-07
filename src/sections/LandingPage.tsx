@@ -11,7 +11,7 @@ export default function LandingPage() {
       <Footer />
       <BsFillCaretDownFill
         size="1em"
-        className=" animate-bounce self-center transition duration-1000 group-hover/section:opacity-100 sm:opacity-0"
+        className=" animate-bounce self-center transition duration-500 group-hover/section:opacity-100 sm:opacity-0"
         id="down-caret"
       />
     </>
