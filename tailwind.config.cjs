@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      blur: {
+        "4xl": "100px"
+      }
+    },
     colors: {
       purple: "#4B006F",
       darkpurple: "#14004D",

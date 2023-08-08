@@ -1,5 +1,5 @@
 import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion"
-import { MouseEvent, useState, useEffect } from "react"
+import { MouseEvent, useEffect } from "react"
 
 export default function Background() {
   useEffect(() => {
@@ -96,7 +96,7 @@ export default function Background() {
   return (
     <div id="hide">
       <div onMouseMove={handleMouseMove} className=" fixed bottom-0 left-0 right-0 top-0 z-0 justify-center"></div>
-      <div className=" fixed bottom-0 left-[calc((1200px-100vw)/2*-1)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center transition duration-1000 group-hover/section:opacity-100 sm:opacity-0 min-[1200px]:left-0">
+      <div className=" fixed bottom-0 left-[calc((1200px-100vw)/2*-1)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center blur-4xl transition duration-1000 group-hover/section:opacity-100 sm:opacity-0 min-[1200px]:left-0">
         <motion.svg
           transition={{ type: "inertia" }}
           viewBox={useMotionTemplate`${springX} ${springA} ${springY} ${springB}`}
@@ -123,7 +123,6 @@ export default function Background() {
               colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_22_31" />
             </filter>
             <linearGradient id="paint0_linear_22_31" x1="669" y1="311" x2="669" y2="861" gradientUnits="userSpaceOnUse">
               <motion.stop stopColor={useMotionTemplate`rgb(${springColor1R},${springColor1G},${springColor1B})`} />
