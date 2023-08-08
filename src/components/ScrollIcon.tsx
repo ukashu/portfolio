@@ -9,7 +9,7 @@ export default function ScrollIcon() {
     one: "opacity-100",
     two: "opacity-40",
     three: "opacity-40",
-    four: "opacity-100"
+    four: "opacity-40"
   })
 
   useEffect(() => {
@@ -66,7 +66,7 @@ export default function ScrollIcon() {
         one: "opacity-100",
         two: "opacity-40",
         three: "opacity-40",
-        four: "opacity-100"
+        four: "opacity-40"
       })
     }
   }

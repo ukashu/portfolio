@@ -7,7 +7,7 @@ import {
   SiNodedotjs,
   SiReact,
   SiGit,
-  SiGithub,
+  SiGo,
   SiFigma,
   SiPostgresql,
   SiTailwindcss,
@@ -65,8 +65,8 @@ export default function Footer() {
         <Tooltip message="Git">
           <SiGit size="2em" />
         </Tooltip>
-        <Tooltip message="GitHub">
-          <SiGithub size="2em" />
+        <Tooltip message="golang">
+          <SiGo size="2em" />
         </Tooltip>
         <Tooltip message="Linux">
           <SiLinux size="2em" />

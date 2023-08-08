@@ -4,7 +4,11 @@ import { MouseEvent, useEffect } from "react"
 export default function Background() {
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll)
-    return () => window.removeEventListener("scroll", listenToScroll)
+    window.addEventListener("mousemove", (MouseEvent) => handleMouseMove(MouseEvent as any))
+    return () => {
+      window.removeEventListener("scroll", listenToScroll)
+      window.removeEventListener("mousemove", (MouseEvent) => handleMouseMove(MouseEvent as any))
+    }
   }, [])
 
   let color1R = useMotionValue(75)
@@ -89,22 +93,20 @@ export default function Background() {
   }
 
   let mouseX = useMotionValue(-50)
-  const springX = useSpring(mouseX, { stiffness: 200, damping: 100 })
+  const springX = useSpring(mouseX, { stiffness: 500, damping: 100 })
   let mouseY = useMotionValue(1800)
-  const springY = useSpring(mouseY, { stiffness: 200, damping: 100 })
+  const springY = useSpring(mouseY, { stiffness: 500, damping: 100 })
   let mouseA = useMotionValue(50)
-  const springA = useSpring(mouseA, { stiffness: 200, damping: 100 })
+  const springA = useSpring(mouseA, { stiffness: 500, damping: 100 })
   let mouseB = useMotionValue(1000)
-  const springB = useSpring(mouseB, { stiffness: 200, damping: 100 })
+  const springB = useSpring(mouseB, { stiffness: 500, damping: 100 })
 
-  function handleMouseMove({ clientX, clientY, currentTarget }: MouseEvent) {
-    let { left, top } = currentTarget.getBoundingClientRect()
-
+  function handleMouseMove({ clientX, clientY }: MouseEvent) {
     let windowWidth = window.innerWidth
     let windowHeight = window.innerHeight
 
-    let xPosition = clientX - left
-    let yPosition = clientY - top
+    let xPosition = clientX
+    let yPosition = clientY
 
     let horizontal = Math.round(((xPosition / windowWidth).toFixed(2) as any) * 100)
     let vertical = Math.round(((yPosition / windowHeight).toFixed(2) as any) * 100)
@@ -117,7 +119,7 @@ export default function Background() {
 
   return (
     <div id="hide">
-      <div onMouseMove={handleMouseMove} className=" fixed bottom-0 left-0 right-0 top-0 z-0 justify-center"></div>
+      <div className=" fixed bottom-0 left-0 right-0 top-0 z-0 justify-center"></div>
       <div className=" fixed bottom-0 left-[calc((1200px-100vw)/2*-1)] right-0 top-0 z-[-10] flex min-w-[1200px] justify-center blur-4xl transition duration-1000 group-hover/section:opacity-100 sm:opacity-0 min-[1200px]:left-0">
         <motion.svg
           transition={{ type: "inertia" }}
