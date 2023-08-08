@@ -72,7 +72,6 @@ export default function ScrollIcon() {
   }
 
   function scrollToSection(id: string) {
-    console.log("you're fired!!!")
     document.querySelector(`#${id}`)!.scrollIntoView({ behavior: "smooth" })
   }
 
@@ -89,9 +88,9 @@ export default function ScrollIcon() {
         <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("nh")} />
       </div>
       <div className={page.four}>
-        <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("nh")} />
+        <BsFillCircleFill size="0.7em" onClick={() => scrollToSection("other")} />
       </div>
-      <BsFillCaretDownFill size="1.2em" className={page.carets} onClick={() => scrollToSection("nh")} />
+      <BsFillCaretDownFill size="1.2em" className={page.carets} onClick={() => scrollToSection("other")} />
     </div>
   )
 }

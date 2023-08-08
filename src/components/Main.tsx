@@ -27,7 +27,11 @@ export default function Main() {
               {t("landing.myProjects.nh")}
             </button>
           </li>
-          <li className="underline">{t("landing.myProjects.3")}</li>
+          <li>
+            <button className="underline" onClick={() => scrollToSection("other")}>
+              {t("landing.myProjects.other")}
+            </button>
+          </li>
         </ul>
       </div>
     </main>
