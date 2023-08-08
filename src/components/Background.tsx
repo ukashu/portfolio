@@ -20,6 +20,8 @@ export default function Background() {
   let color2B = useMotionValue(77)
   const springColor2B = useSpring(color2B, { stiffness: 1000, damping: 100 })
 
+  let pageNumber = 1
+
   const listenToScroll = () => {
     let sectionOne = document.getElementById("landing")!.offsetHeight
     let sectionTwo = document.getElementById("gt")!.offsetHeight
@@ -28,39 +30,59 @@ export default function Background() {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
     if (winScroll > sectionThree + sectionTwo + Math.floor(sectionOne / 2)) {
+      if (pageNumber === 4) {
+        return
+      }
+      console.log("setting")
       color1R.set(75)
       color1G.set(0)
       color1B.set(111)
       color2R.set(20)
       color2G.set(0)
       color2B.set(77)
+      pageNumber = 4
       document.body.style.backgroundColor = "#292929"
       document.body.style.color = "#FCFF74"
     } else if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
+      if (pageNumber === 3) {
+        return
+      }
+      console.log("setting")
       color1R.set(96)
       color1G.set(96)
       color1B.set(96)
       color2R.set(228)
       color2G.set(228)
       color2B.set(231)
+      pageNumber = 3
       document.body.style.backgroundColor = "rgb(52, 52, 52)"
       document.body.style.color = "rgb(228,228,231)"
     } else if (winScroll > Math.floor(sectionOne / 2)) {
+      if (pageNumber === 2) {
+        return
+      }
+      console.log("setting")
       color1R.set(200)
       color1G.set(0)
       color1B.set(20)
       color2R.set(99)
       color2G.set(0)
       color2B.set(12)
+      pageNumber = 2
       document.body.style.backgroundColor = "rgb(153, 212, 255)"
       document.body.style.color = "rgb(48,131,255)"
     } else {
+      if (pageNumber === 1) {
+        return
+      }
+      console.log("setting")
       color1R.set(75)
       color1G.set(0)
       color1B.set(111)
       color2R.set(20)
       color2G.set(0)
       color2B.set(77)
+      pageNumber = 1
       document.body.style.backgroundColor = "#292929"
       document.body.style.color = "#FCFF74"
     }

@@ -5,11 +5,11 @@ import { useState, useEffect } from "react"
 
 export default function ScrollIcon() {
   const [page, setPage] = useState({
-    carets: "opacity-0",
-    one: "opacity-0",
-    two: "opacity-0",
-    three: "opacity-0",
-    four: "opacity-0"
+    carets: "opacity-100",
+    one: "opacity-100",
+    two: "opacity-40",
+    three: "opacity-40",
+    four: "opacity-100"
   })
 
   useEffect(() => {
@@ -62,11 +62,11 @@ export default function ScrollIcon() {
         return
       }
       setPage({
-        carets: "opacity-0",
-        one: "opacity-0",
-        two: "opacity-0",
-        three: "opacity-0",
-        four: "opacity-0"
+        carets: "opacity-100",
+        one: "opacity-100",
+        two: "opacity-40",
+        three: "opacity-40",
+        four: "opacity-100"
       })
     }
   }
