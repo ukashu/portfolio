@@ -35,7 +35,7 @@ export default function Card(props: Props) {
   return (
     <div
       id={`card${props.id}`}
-      className="card flex min-h-full min-w-[600px] max-w-full flex-col items-center justify-between rounded-md bg-[#C5CDE0] bg-opacity-60 p-8 drop-shadow-xl">
+      className="card flex min-h-full min-w-full max-w-full flex-col items-center justify-between rounded-md bg-[#C5CDE0] bg-opacity-60 p-8 drop-shadow-xl md:min-w-[600px]">
       <div className=" flex flex-col items-center text-center">
         <h1 className=" text-center text-2xl font-semibold">{props.header}</h1>
         <img src={props.imageSrc} className=" w-2/6 pt-8"></img>

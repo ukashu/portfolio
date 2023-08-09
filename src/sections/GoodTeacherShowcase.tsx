@@ -43,7 +43,7 @@ export default function GoodTeacherShowcase() {
           className="w-auto object-contain drop-shadow-lg duration-100 ease-in hover:z-30 hover:scale-150 max-md:max-w-[10%] md:max-h-[40%] md:rounded-xl"></img>
       </div>
       <div className="w-100% flex flex-col justify-between gap-12 rounded-xl md:w-4/12 lg:rounded-3xl">
-        <img src={gt_logo} className=" w-full rounded-3xl"></img>
+        <img src={gt_logo} className=" w-full rounded-xl lg:rounded-3xl"></img>
         <div className=" w-100% flex flex-grow flex-col justify-around rounded-xl bg-gt-blue-light bg-opacity-80 p-2 lg:rounded-3xl lg:p-6">
           <div>
             <h1 className=" pb-6 text-center text-xl font-semibold">{t("gt.title")}</h1>

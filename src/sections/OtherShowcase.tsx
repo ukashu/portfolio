@@ -56,10 +56,10 @@ export default function OtherShowcase() {
       <div className=" flex h-[10vh] w-full items-center justify-center text-center text-4xl font-semibold">
         <p>Other projects</p>
       </div>
-      <button onClick={() => scrollLeft()} className=" absolute left-20 z-20">
+      <button onClick={() => scrollLeft()} className=" absolute left-0 z-20 md:left-20">
         <BsFillCaretLeftFill size="2em" />
       </button>
-      <button onClick={() => scrollRight()} className=" absolute right-20 z-20">
+      <button onClick={() => scrollRight()} className=" absolute right-0 z-20 md:right-20">
         <BsFillCaretRightFill size="2em" />
       </button>
       <div
