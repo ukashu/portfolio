@@ -18,6 +18,9 @@ import {
 } from "react-icons/si/index.js"
 import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs/index.js"
 import SLAdiagram from "../images/SLAdiagram.png"
+import boring_avatar from "../images/boring_avatar.svg"
+import react_map_screenshot from "../images/react_map_screenshot.jpg"
+import portfolio_screenshot from "../images/portfolio_screenshot.png"
 import "../i18n/config"
 import { useTranslation } from "react-i18next"
 
@@ -50,7 +53,7 @@ export default function OtherShowcase() {
 
   return (
     <div className=" flex h-full flex-grow flex-col items-center justify-around px-6 pb-6">
-      <div className=" h-[10vh] w-full text-center text-4xl font-semibold">
+      <div className=" flex h-[10vh] w-full items-center justify-center text-center text-4xl font-semibold">
         <p>Other projects</p>
       </div>
       <button onClick={() => scrollLeft()} className=" absolute left-20 z-20">
@@ -62,39 +65,48 @@ export default function OtherShowcase() {
       <div
         id="horizontal"
         className="flex h-[60vh] w-screen flex-grow flex-row items-center gap-32 overflow-x-scroll px-[calc(50vw-300px)] py-36">
-        <Card id={0} header={t("other.flight-route.header")} description={t("other.flight-route.description")}>
-          <SiJavascript size="2em" />
-          <SiNodedotjs size="2em" />
-          <SiExpress size="2em" />
-          <SiPostgresql size="2em" />
-          <SiPrisma size="2em" />
-          <SiReact size="2em" />
-          <SiPostgresql size="2em" />
-          <SiGoogle size="2em" />
-          <SiVite size="2em" />
-          <SiJest size="2em" />
+        <Card
+          id={0}
+          header={t("other.flight-route.header")}
+          description={t("other.flight-route.description")}
+          imageSrc={react_map_screenshot}>
+          <SiJavascript size="2em" title="JavaScript" />
+          <SiNodedotjs size="2em" title="NodeJS" />
+          <SiExpress size="2em" title="ExpressJS" />
+          <SiPostgresql size="2em" title="PostgreSQL" />
+          <SiPrisma size="2em" title="Prisma" />
+          <SiReact size="2em" title="React" />
+          <SiGoogle size="2em" title="Google Sign-in" />
+          <SiVite size="2em" title="Vite" />
+          <SiJest size="2em" title="Jest" />
         </Card>
         <Card id={1} header={t("other.sla.header")} description={t("other.sla.description")} imageSrc={SLAdiagram}>
-          <SiJavascript size="2em" />
-          <SiNodedotjs size="2em" />
-          <SiExpress size="2em" />
+          <SiJavascript size="2em" title="JavaScript" />
+          <SiNodedotjs size="2em" title="NodeJS" />
+          <SiExpress size="2em" title="ExpressJS" />
         </Card>
         <Card
           id={2}
           header={t("other.react-native-boring-avatars.header")}
-          description={t("other.react-native-boring-avatars.description")}>
-          <SiTypescript size="2em" />
-          <SiWebpack size="2em" />
+          description={t("other.react-native-boring-avatars.description")}
+          imageSrc={boring_avatar}
+          npmUrl="https://www.npmjs.com/">
+          <SiTypescript size="2em" title="TypeScript" />
+          <SiWebpack size="2em" title="Webpack" />
         </Card>
-        <Card id={3} header={t("other.portfolio.header")} description={t("other.portfolio.description")}>
-          <SiTypescript size="2em" />
-          <SiReact size="2em" />
-          <SiAstro size="2em" />
+        <Card
+          id={3}
+          header={t("other.portfolio.header")}
+          description={t("other.portfolio.description")}
+          imageSrc={portfolio_screenshot}>
+          <SiTypescript size="2em" title="TypeScript" />
+          <SiReact size="2em" title="React" />
+          <SiAstro size="2em" title="Astro" />
         </Card>
         <Card id={4} header={t("other.scraper.header")} description={t("other.scraper.description")}>
-          <SiJavascript size="2em" />
-          <SiNodedotjs size="2em" />
-          <SiPuppeteer size="2em" />
+          <SiJavascript size="2em" title="JavaScript" />
+          <SiNodedotjs size="2em" title="NodeJS" />
+          <SiPuppeteer size="2em" title="Puppeteer" />
         </Card>
       </div>
     </div>
