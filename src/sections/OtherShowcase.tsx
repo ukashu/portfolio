@@ -17,17 +17,17 @@ import {
   SiPuppeteer
 } from "react-icons/si/index.js"
 import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs/index.js"
-import SLAdiagram from "../images/SLAdiagram.png"
+import sla_diagram from "../images/sla_diagram.jpg"
 import boring_avatar from "../images/boring_avatar.svg"
 import react_map_screenshot from "../images/react_map_screenshot.jpg"
-import portfolio_screenshot from "../images/portfolio_screenshot.png"
+import portfolio_screenshot from "../images/portfolio_screenshot.jpg"
 import "../i18n/config"
 import { useTranslation } from "react-i18next"
 
 export default function OtherShowcase() {
   const { t } = useTranslation()
 
-  const [currentlyFocusedCard, setCurrentlyFocusedCard] = useState(2)
+  const [currentlyFocusedCard, setCurrentlyFocusedCard] = useState(0)
 
   useEffect(() => {
     scrollToCard(currentlyFocusedCard as any)
@@ -80,7 +80,7 @@ export default function OtherShowcase() {
           <SiVite size="2em" title="Vite" />
           <SiJest size="2em" title="Jest" />
         </Card>
-        <Card id={1} header={t("other.sla.header")} description={t("other.sla.description")} imageSrc={SLAdiagram}>
+        <Card id={1} header={t("other.sla.header")} description={t("other.sla.description")} imageSrc={sla_diagram}>
           <SiJavascript size="2em" title="JavaScript" />
           <SiNodedotjs size="2em" title="NodeJS" />
           <SiExpress size="2em" title="ExpressJS" />

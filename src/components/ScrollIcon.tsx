@@ -25,15 +25,15 @@ export default function ScrollIcon() {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
     if (winScroll > sectionThree + sectionTwo + Math.floor(sectionOne / 2)) {
-      if (page.four === "opacity-100") {
+      if (page.four === "opacity-0") {
         return
       }
       setPage({
-        carets: "opacity-100",
-        one: "opacity-40",
-        two: "opacity-40",
-        three: "opacity-40",
-        four: "opacity-100"
+        carets: "opacity-0",
+        one: "opacity-0",
+        two: "opacity-0",
+        three: "opacity-0",
+        four: "opacity-0"
       })
     } else if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
       if (page.three === "opacity-100") {

@@ -22,7 +22,8 @@ export default function Card(props: Props) {
   let childrenWrapped
 
   if (props.children) {
-    childrenWrapped = props.children.map((item) => {
+    // @ts-ignore
+    childrenWrapped = props.children.map((item: any) => {
       return (
         <Tooltip message={item.props.title} key={item.props.title}>
           {item}
