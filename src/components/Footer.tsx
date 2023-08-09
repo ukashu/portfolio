@@ -26,7 +26,7 @@ export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <div className=" flex h-1/5 flex-col gap-4 overflow-hidden pb-28 max-[800px]:pb-20">
+    <div className=" flex h-1/5 flex-col gap-4 overflow-hidden pb-28 max-[800px]:pb-10">
       <p className=" font-semibold sm:ml-32">{t("landing.mySkills")}</p>
       <div className=" flex flex-row flex-wrap justify-center gap-3 sm:gap-5">
         <Tooltip message="TypeScript">
