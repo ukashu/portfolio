@@ -38,15 +38,15 @@ export default function Background() {
         return
       }
       console.log("setting")
-      color1R.set(75)
-      color1G.set(0)
-      color1B.set(111)
-      color2R.set(20)
-      color2G.set(0)
-      color2B.set(77)
+      color1R.set(0)
+      color1G.set(9)
+      color1B.set(219)
+      color2R.set(0)
+      color2G.set(4)
+      color2B.set(99)
       pageNumber = 4
-      document.body.style.backgroundColor = "#292929"
-      document.body.style.color = "#FCFF74"
+      document.body.style.backgroundColor = "#D4DCF0"
+      document.body.style.color = "#000463"
     } else if (winScroll > sectionOne + Math.floor(sectionTwo / 2)) {
       if (pageNumber === 3) {
         return

@@ -41,5 +41,28 @@
       "7": "daily browsing time tracking"
     },
     "techUsed": "Tech used:"
-  }
+  },
+  "other": {
+    "sla": {
+      "header": "Spotify Listen Along",
+      "description": "Application allowing multiple people (watchers) to listen along to one spotify playback controlled by one person (streamer)."
+    },
+    "react-native-boring-avatars": {
+      "header": "react-native-boring-avatars",
+      "description": "Simple React Native implementation of Boring Avatars.Fixes blurry svg problem from other React Native implementations."
+    },
+    "flight-route": {
+      "header": "Flight route calculator",
+      "description": "Application that calculates data needed for a flight plan based on input data and a route drawn on an OpenLayers map."
+    },
+    "scraper": {
+      "header": "stock price scraper",
+      "description": "CLI application that scrapes the barchart website for stock price data. Implemented with apt cooldown period between requests so as not to overload the website servers."
+    },
+    "portfolio": {
+      "header": "This website",
+      "description": "Fully custom portfolio website"
+    }
+  },
+  "built-with": "Built with:"
 }

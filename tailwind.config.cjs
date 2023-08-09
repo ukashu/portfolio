@@ -20,7 +20,10 @@ module.exports = {
       "gt-red-dark": "#CC0000",
       "nh-grey-light": "#343434",
       "nh-grey-dark": "#111111",
-      "nh-white": "#E4E4E7"
+      "nh-white": "#E4E4E7",
+      "other-white": "#D4DCF0",
+      "other-blue-light": "#0009DB",
+      "other-blue-dark": "#000463"
     }
   },
   plugins: []
