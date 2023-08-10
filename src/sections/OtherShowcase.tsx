@@ -64,7 +64,7 @@ export default function OtherShowcase() {
       </button>
       <div
         id="horizontal"
-        className="flex h-[60vh] w-screen flex-grow flex-row items-center gap-32 overflow-x-scroll px-[calc(50vw-300px)] py-36">
+        className="flex min-h-[60vh] w-screen flex-grow flex-row items-center gap-32 overflow-x-scroll px-[calc(50vw-300px)] py-36">
         <Card
           id={0}
           header={t("other.flight-route.header")}

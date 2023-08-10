@@ -1,6 +1,15 @@
 import newHomeShowcase from "../images/newHomeShowcase.png"
 import nh_logo from "../images/nh_logo.svg"
-import { SiTypescript, SiReact, SiTailwindcss, SiUndertale, SiGithub } from "react-icons/si/index.js"
+import {
+  SiTypescript,
+  SiReact,
+  SiTailwindcss,
+  SiUndertale,
+  SiGithub,
+  SiGoogle,
+  SiSpotify,
+  SiGooglecalendar
+} from "react-icons/si/index.js"
 import Tooltip from "../components/Tooltip"
 import "../i18n/config"
 import { useTranslation } from "react-i18next"
@@ -52,6 +61,12 @@ export default function NewHomeShowcase() {
             </Tooltip>
             <Tooltip message="Plasmo">
               <SiUndertale size="2em" />
+            </Tooltip>
+            <Tooltip message="Google Calendar API">
+              <SiGoogle size="2em" />
+            </Tooltip>
+            <Tooltip message="Spotify Web API">
+              <SiSpotify size="2em" />
             </Tooltip>
           </div>
         </div>

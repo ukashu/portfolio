@@ -29,7 +29,7 @@
   },
   "nh": {
     "title": "Productivity focused Chromium extension",
-    "description": "Chromium extension replacing default new tab with custom productivity focused home.",
+    "description": "Chromium extension replacing default new tab with a custom productivity focused home.",
     "features": {
       "title": "Features:",
       "1": "habit tracking",
@@ -49,7 +49,7 @@
     },
     "react-native-boring-avatars": {
       "header": "react-native-boring-avatars",
-      "description": "Simple React Native implementation of Boring Avatars.Fixes blurry svg problem from other React Native implementations."
+      "description": "Simple React Native implementation of Boring Avatars. Fixes blurry svg problem from other React Native implementations."
     },
     "flight-route": {
       "header": "Flight route calculator",
