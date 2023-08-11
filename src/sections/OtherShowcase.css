@@ -4,16 +4,10 @@
   scroll-snap-type: x mandatory;
 }
 
-/* #horizontal::-webkit-scrollbar {
-  display: block;
-  width: 5px;
-  height: 8px;
-  background: #000000;
-} */
-
-/* #horizontal::-webkit-scrollbar-thumb {
-  background: #e0e0e0;
-} */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 .card {
   scroll-snap-align: center;
