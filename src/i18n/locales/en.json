@@ -6,8 +6,7 @@
       "gt": "goodteacher mobile app",
       "nh": "NewHome chromium extension",
       "other": "other projects"
-    },
-    "mySkills": "My Skills:"
+    }
   },
   "gt": {
     "title": "Online student notebook replacement",
@@ -24,8 +23,7 @@
       "5": "infrastructure designed with user data security in mind",
       "6": "fun randomly generated student avatars",
       "7": "two languages (PL, ENG)"
-    },
-    "techUsed": "Built with:"
+    }
   },
   "nh": {
     "title": "Productivity focused Chromium extension",
@@ -39,21 +37,20 @@
       "5": "daily stoic phrase from stoic quotes API",
       "6": "website shortcuts",
       "7": "daily browsing time tracking"
-    },
-    "techUsed": "Built with:"
+    }
   },
   "other": {
     "sla": {
       "header": "Spotify Listen Along",
-      "description": "Application allowing multiple people (watchers) to listen along to one spotify playback controlled by one person (streamer)."
+      "description": "Application allowing multiple people to listen along to one spotify playback controlled by one person."
     },
     "react-native-boring-avatars": {
       "header": "react-native-boring-avatars",
-      "description": "Simple React Native implementation of Boring Avatars. Fixes blurry svg problem from other React Native implementations."
+      "description": "My React Native implementation of Boring Avatars packaged and published on npm. It fixes blurry svg problem from other React Native implementations."
     },
     "flight-route": {
       "header": "Flight route calculator",
-      "description": "Application that calculates data needed for a flight plan based on input data and a route drawn on an OpenLayers map."
+      "description": "Application that calculates data needed for a flight plan based on input data and a route drawn on an OpenLayers map. It features an option to read magnetic declination and wind data from external sources via HTTP. It provides authorization built around google sign in and JWT tokens and a possibility of saving previous flights in a PostgreSQL database."
     },
     "scraper": {
       "header": "stock price scraper",
@@ -61,8 +58,9 @@
     },
     "portfolio": {
       "header": "This website",
-      "description": "Fully custom-made portfolio website"
+      "description": "Fully custom-made portfolio website. No templates used."
     }
   },
-  "built-with": "Built with:"
+  "mySkills": "My Skills:",
+  "builtWith": "Built with:"
 }

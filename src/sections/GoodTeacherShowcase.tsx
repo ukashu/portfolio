@@ -72,7 +72,7 @@ export default function GoodTeacherShowcase() {
           </Tooltip>
         </div>
         <div className=" w-100% flex flex-col gap-3 rounded-xl bg-gt-blue-light bg-opacity-80 p-2 lg:rounded-3xl lg:p-6">
-          <h1 className=" font-semibold">{t("gt.techUsed")}</h1>
+          <h1 className=" font-semibold">{t("builtWith")}</h1>
           <div className=" flex flex-grow flex-row flex-wrap items-center justify-center gap-3">
             <Tooltip message="TypeScript">
               <SiTypescript size="2em" />

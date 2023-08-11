@@ -6,8 +6,7 @@
       "gt": "aplikacja mobilna goodteacher",
       "nh": "rozszerzenie NewHome",
       "other": "inne projekty"
-    },
-    "mySkills": "Używam:"
+    }
   },
   "gt": {
     "title": "Aplikacja zastępująca zeszyt ucznia",
@@ -24,8 +23,7 @@
       "5": "zbudowano z myślą o bezpieczeństwie danych",
       "6": "losowo generowane awatary ucznia",
       "7": "dwa języki (PL, ENG)"
-    },
-    "techUsed": "Użyto:"
+    }
   },
   "nh": {
     "title": "Rozszerzenie Chromium służące poprawie produktywności",
@@ -39,7 +37,30 @@
       "5": "codzienna stoicka fraza ze 'stoic quotes API'",
       "6": "skróty stron",
       "7": "monitorowanie czasu używania stron"
+    }
+  },
+  "other": {
+    "sla": {
+      "header": "Spotify Listen Along",
+      "description": "Aplikacja dająca możliwość słuchania spotify w grupie przez internet."
     },
-    "techUsed": "Użyto:"
-  }
+    "react-native-boring-avatars": {
+      "header": "react-native-boring-avatars",
+      "description": "Moja implementacja biblioteki Boring Avatars w React Native opublikowana na stronie npm. Naprawia problem rozmytych awatarów obecny w innych implementacjach."
+    },
+    "flight-route": {
+      "header": "Kalkulator trasy lotu",
+      "description": "Aplikacja służąca do wyliczania danych potrzebnych do lotu. Na podstawie trasy narysowanej na mapie OpenLayers i wprowadzonych danych kalkuluje dane nawigacyjne. Daje możliwość pobrania danych wiatru oraz deklinacji magnetycznej z zewnętrznych źródeł przez HTTP. Zapewnia możliwość zalogowania się kontem Google z uwierzytelnieniem za pomocą tokena JWT oraz funkcję zapisania lotów w bazie danych PostgreSQL."
+    },
+    "scraper": {
+      "header": "stock price scraper",
+      "description": "CLI application that scrapes the barchart website for stock price data. Implemented with apt cooldown period between requests so as not to overload the website servers."
+    },
+    "portfolio": {
+      "header": "Strona którą właśnie przeglądasz",
+      "description": "Zaprojektowana oraz napisana bez użycia szablonów moja strona portfolio."
+    }
+  },
+  "mySkills": "My Skills:",
+  "builtWith": "Built with:"
 }

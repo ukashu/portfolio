@@ -14,7 +14,8 @@ import {
   SiTypescript,
   SiWebpack,
   SiAstro,
-  SiPuppeteer
+  SiPuppeteer,
+  SiSocketdotio
 } from "react-icons/si/index.js"
 import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs/index.js"
 import sla_diagram from "../images/sla_diagram.jpg"
@@ -84,6 +85,7 @@ export default function OtherShowcase() {
           <SiJavascript size="2em" title="JavaScript" />
           <SiNodedotjs size="2em" title="NodeJS" />
           <SiExpress size="2em" title="ExpressJS" />
+          <SiSocketdotio size="2em" title="SocketIO" />
         </Card>
         <Card
           id={2}
@@ -98,15 +100,11 @@ export default function OtherShowcase() {
           id={3}
           header={t("other.portfolio.header")}
           description={t("other.portfolio.description")}
-          imageSrc={portfolio_screenshot}>
+          imageSrc={portfolio_screenshot}
+          linkUrl="https://ukashu.vercel.app/">
           <SiTypescript size="2em" title="TypeScript" />
           <SiReact size="2em" title="React" />
           <SiAstro size="2em" title="Astro" />
-        </Card>
-        <Card id={4} header={t("other.scraper.header")} description={t("other.scraper.description")}>
-          <SiJavascript size="2em" title="JavaScript" />
-          <SiNodedotjs size="2em" title="NodeJS" />
-          <SiPuppeteer size="2em" title="Puppeteer" />
         </Card>
       </div>
     </div>
