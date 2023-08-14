@@ -67,7 +67,7 @@ export default function GoodTeacherShowcase() {
               <li>- {t("gt.features.7")}</li>
             </ul>
           </div>
-          <a href={"https://github.com/ukashu/goodteacher"} className="inline-block self-center">
+          <a href={"https://github.com/ukashu/goodteacher"} className="my-1 inline-block self-center">
             <OpenInButton serviceName="GitHub" backgroundColor="#2563EB" iconColor="#99D4FF" />
           </a>
         </div>
