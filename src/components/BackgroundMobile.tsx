@@ -21,7 +21,6 @@ export default function BackgroundMobile() {
       if (pageNumber === 4) {
         return
       }
-      console.log("setting")
       pageNumber = 4
       document.body.style.backgroundColor = "#D4DCF0"
       document.body.style.color = "#000463"
@@ -29,7 +28,6 @@ export default function BackgroundMobile() {
       if (pageNumber === 3) {
         return
       }
-      console.log("setting")
       pageNumber = 3
       document.body.style.backgroundColor = "rgb(52, 52, 52)"
       document.body.style.color = "rgb(228,228,231)"
@@ -37,7 +35,6 @@ export default function BackgroundMobile() {
       if (pageNumber === 2) {
         return
       }
-      console.log("setting")
       pageNumber = 2
       document.body.style.backgroundColor = "rgb(153, 212, 255)"
       document.body.style.color = "rgb(48,131,255)"
@@ -45,7 +42,6 @@ export default function BackgroundMobile() {
       if (pageNumber === 1) {
         return
       }
-      console.log("setting")
       pageNumber = 1
       document.body.style.backgroundColor = "#292929"
       document.body.style.color = "#FCFF74"

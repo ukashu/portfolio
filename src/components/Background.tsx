@@ -37,7 +37,6 @@ export default function Background() {
       if (pageNumber === 4) {
         return
       }
-      console.log("setting")
       color1R.set(0)
       color1G.set(9)
       color1B.set(219)
@@ -51,7 +50,6 @@ export default function Background() {
       if (pageNumber === 3) {
         return
       }
-      console.log("setting")
       color1R.set(96)
       color1G.set(96)
       color1B.set(96)
@@ -65,7 +63,6 @@ export default function Background() {
       if (pageNumber === 2) {
         return
       }
-      console.log("setting")
       color1R.set(200)
       color1G.set(0)
       color1B.set(20)
@@ -79,7 +76,6 @@ export default function Background() {
       if (pageNumber === 1) {
         return
       }
-      console.log("setting")
       color1R.set(75)
       color1G.set(0)
       color1B.set(111)
