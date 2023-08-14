@@ -14,7 +14,8 @@ import {
   SiTypescript,
   SiWebpack,
   SiAstro,
-  SiSocketdotio
+  SiSocketdotio,
+  SiI18Next
 } from "react-icons/si/index.js"
 import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs/index.js"
 import sla_diagram from "../images/sla_diagram.jpg"
@@ -112,6 +113,7 @@ export default function OtherShowcase() {
           <SiTypescript size="2em" title="TypeScript" />
           <SiReact size="2em" title="React" />
           <SiAstro size="2em" title="Astro" />
+          <SiI18Next size="2em" title="i18next" />
         </Card>
       </div>
     </div>

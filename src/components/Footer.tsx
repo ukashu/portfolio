@@ -7,7 +7,7 @@ import {
   SiNodedotjs,
   SiReact,
   SiGit,
-  SiGo,
+  SiPuppeteer,
   SiFigma,
   SiPostgresql,
   SiTailwindcss,
@@ -59,14 +59,14 @@ export default function Footer() {
         <Tooltip message="Jest">
           <SiJest size="2em" />
         </Tooltip>
+        <Tooltip message="Puppeteer">
+          <SiPuppeteer size="2em" />
+        </Tooltip>
         <Tooltip message="Figma">
           <SiFigma size="2em" />
         </Tooltip>
         <Tooltip message="Git">
           <SiGit size="2em" />
-        </Tooltip>
-        <Tooltip message="golang">
-          <SiGo size="2em" />
         </Tooltip>
         <Tooltip message="Linux">
           <SiLinux size="2em" />

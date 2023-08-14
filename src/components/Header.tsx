@@ -15,9 +15,7 @@ export default function Header() {
         <SiGithub size="1.5em" onClick={() => console.log("clicked")} />
         <strong className=" text-base font-semibold">GitHub</strong>
       </a>
-      <a
-        href="https://www.linkedin.com/in/%C5%82ukasz-filipiuk-ukashu/"
-        className=" flex flex-row items-center justify-around gap-2">
+      <a href="https://www.linkedin.com/in/ukashu/" className=" flex flex-row items-center justify-around gap-2">
         <SiLinkedin size="1.5em" onClick={() => console.log("clicked")} />
         <strong className=" text-base font-semibold">LinkedIn</strong>
       </a>
