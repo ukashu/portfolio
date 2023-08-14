@@ -42,7 +42,7 @@
   "other": {
     "sla": {
       "header": "Spotify Listen Along",
-      "description": "Aplikacja dająca możliwość słuchania spotify w grupie przez internet."
+      "description": "Aplikacja dająca możliwość słuchania spotify w grupie przez internet. Korzysta z protokołu komunikacyjnego WebSocket."
     },
     "react-native-boring-avatars": {
       "header": "react-native-boring-avatars",
@@ -50,7 +50,7 @@
     },
     "flight-route": {
       "header": "Kalkulator trasy lotu",
-      "description": "Aplikacja służąca do wyliczania danych potrzebnych do lotu. Na podstawie trasy narysowanej na mapie OpenLayers i wprowadzonych danych kalkuluje dane nawigacyjne. Daje możliwość pobrania danych wiatru oraz deklinacji magnetycznej z zewnętrznych źródeł przez HTTP. Zapewnia możliwość zalogowania się kontem Google z uwierzytelnieniem za pomocą tokena JWT oraz funkcję zapisania lotów w bazie danych PostgreSQL."
+      "description": "Aplikacja służąca do wyliczania danych potrzebnych do lotu. Na podstawie trasy narysowanej na mapie OpenLayers i wprowadzonych danych kalkuluje dane nawigacyjne. Daje możliwość pobrania danych wiatru oraz deklinacji magnetycznej z zewnętrznych źródeł przez HTTP. Zapewnia możliwość zalogowania się kontem Google z uwierzytelnieniem za pomocą tokena JWT oraz funkcję zapisania lotów w bazie danych PostgreSQL. Zawiera testy e2e."
     },
     "scraper": {
       "header": "stock price scraper",

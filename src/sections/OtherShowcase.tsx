@@ -69,7 +69,8 @@ export default function OtherShowcase() {
           id={0}
           header={t("other.flight-route.header")}
           description={t("other.flight-route.description")}
-          imageSrc={react_map_screenshot}>
+          imageSrc={react_map_screenshot}
+          gitHubUrl="https://github.com/ukashu/reactmap">
           <SiJavascript size="2em" title="JavaScript" />
           <SiNodedotjs size="2em" title="NodeJS" />
           <SiExpress size="2em" title="ExpressJS" />
@@ -80,7 +81,12 @@ export default function OtherShowcase() {
           <SiVite size="2em" title="Vite" />
           <SiJest size="2em" title="Jest" />
         </Card>
-        <Card id={1} header={t("other.sla.header")} description={t("other.sla.description")} imageSrc={sla_diagram}>
+        <Card
+          id={1}
+          header={t("other.sla.header")}
+          description={t("other.sla.description")}
+          imageSrc={sla_diagram}
+          gitHubUrl="https://github.com/ukashu/sla-public">
           <SiJavascript size="2em" title="JavaScript" />
           <SiNodedotjs size="2em" title="NodeJS" />
           <SiExpress size="2em" title="ExpressJS" />
@@ -91,7 +97,8 @@ export default function OtherShowcase() {
           header={t("other.react-native-boring-avatars.header")}
           description={t("other.react-native-boring-avatars.description")}
           imageSrc={boring_avatar}
-          npmUrl="https://www.npmjs.com/">
+          npmUrl="https://www.npmjs.com/package/@ukashu/boring-avatars-react-native"
+          gitHubUrl="https://github.com/ukashu/boring-avatars-react-native">
           <SiTypescript size="2em" title="TypeScript" />
           <SiWebpack size="2em" title="Webpack" />
         </Card>
@@ -100,7 +107,8 @@ export default function OtherShowcase() {
           header={t("other.portfolio.header")}
           description={t("other.portfolio.description")}
           imageSrc={portfolio_screenshot}
-          linkUrl="https://ukashu.vercel.app/">
+          linkUrl="https://ukashu.vercel.app/"
+          gitHubUrl="https://github.com/ukashu/portfolio">
           <SiTypescript size="2em" title="TypeScript" />
           <SiReact size="2em" title="React" />
           <SiAstro size="2em" title="Astro" />

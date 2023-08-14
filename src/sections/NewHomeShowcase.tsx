@@ -35,7 +35,7 @@ export default function NewHomeShowcase() {
               <li>- {t("nh.features.7")}</li>
             </ul>
           </div>
-          <a href={""} className="inline-block self-center">
+          <a href={"https://github.com/ukashu/new-home"} className="inline-block self-center">
             <OpenInButton serviceName="GitHub" backgroundColor="#E4E4E7" iconColor="#111111" />
           </a>
         </div>

@@ -11,7 +11,7 @@ type Props = {
   description: string
   imageSrc?: string
   children?: React.ReactNode | React.ReactNode[]
-  gitHubUrl?: string
+  gitHubUrl: string
   npmUrl?: string
   linkUrl?: string
 }

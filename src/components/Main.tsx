@@ -11,7 +11,7 @@ export default function Main() {
   return (
     <main className=" flex h-3/5 flex-grow flex-col items-center justify-around px-6 sm:flex-row">
       <div className=" text-center">
-        <h1 className="mb-1 text-6xl font-bold">John Doe</h1>
+        <h1 className="mb-1 text-6xl font-bold">Łukasz Filipiuk</h1>
         <p>{t("landing.title")}</p>
       </div>
       <div className=" z-10">

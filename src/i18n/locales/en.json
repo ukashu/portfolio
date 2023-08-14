@@ -42,7 +42,7 @@
   "other": {
     "sla": {
       "header": "Spotify Listen Along",
-      "description": "Application allowing multiple people to listen along to one spotify playback controlled by one person."
+      "description": "Application allowing multiple people to listen along to one spotify playback controlled by one person. Uses WebSocket communication protocol."
     },
     "react-native-boring-avatars": {
       "header": "react-native-boring-avatars",
@@ -50,7 +50,7 @@
     },
     "flight-route": {
       "header": "Flight route calculator",
-      "description": "Application that calculates data needed for a flight plan based on input data and a route drawn on an OpenLayers map. It features an option to read magnetic declination and wind data from external sources via HTTP. It provides authorization built around google sign in and JWT tokens and a possibility of saving previous flights in a PostgreSQL database."
+      "description": "Application that calculates data needed for a flight plan based on input data and a route drawn on an OpenLayers map. It features an option to read magnetic declination and wind data from external sources via HTTP. It provides authorization built around google sign in and JWT tokens and a possibility of saving previous flights in a PostgreSQL database. Includes e2e tests."
     },
     "scraper": {
       "header": "stock price scraper",
