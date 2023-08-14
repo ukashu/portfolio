@@ -14,7 +14,6 @@ import {
   SiTypescript,
   SiWebpack,
   SiAstro,
-  SiPuppeteer,
   SiSocketdotio
 } from "react-icons/si/index.js"
 import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs/index.js"
@@ -35,7 +34,7 @@ export default function OtherShowcase() {
   }, [currentlyFocusedCard])
 
   function scrollRight() {
-    if (currentlyFocusedCard === 4) {
+    if (currentlyFocusedCard === 3) {
       return
     }
     setCurrentlyFocusedCard((prevState) => prevState + 1)

@@ -13,12 +13,12 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiExpo,
-  SiI18Next,
-  SiGithub
+  SiI18Next
 } from "react-icons/si/index.js"
 import Tooltip from "../components/Tooltip"
 import "../i18n/config"
 import { useTranslation } from "react-i18next"
+import OpenInButton from "../components/OpenInButton"
 
 export default function GoodTeacherShowcase() {
   const { t } = useTranslation()
@@ -67,9 +67,9 @@ export default function GoodTeacherShowcase() {
               <li>- {t("gt.features.7")}</li>
             </ul>
           </div>
-          <Tooltip message="Check out the project repository on GitHub!">
-            <SiGithub size="2em" />
-          </Tooltip>
+          <a href={""} className="inline-block self-center">
+            <OpenInButton serviceName="GitHub" backgroundColor="#2563EB" iconColor="#99D4FF" />
+          </a>
         </div>
         <div className=" w-100% flex flex-col gap-3 rounded-xl bg-gt-blue-light bg-opacity-80 p-2 lg:rounded-3xl lg:p-6">
           <h1 className=" font-semibold">{t("builtWith")}</h1>

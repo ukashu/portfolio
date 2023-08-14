@@ -1,7 +1,6 @@
 import "../sections/OtherShowcase.css"
 import Tooltip from "../components/Tooltip"
 
-import { SiExpress, SiJavascript, SiNodedotjs } from "react-icons/si/index.js"
 import OpenInButton from "./OpenInButton"
 import "../i18n/config"
 import { useTranslation } from "react-i18next"
