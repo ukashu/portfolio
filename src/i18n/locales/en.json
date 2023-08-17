@@ -12,7 +12,7 @@
     "title": "Online student notebook replacement",
     "description": {
       "1": "Mobile app",
-      "2": "is an online replacement for a student notebook. It's made for teachers and students, primarily with music schools in mind, but it can be used in any field. Teachers can create classes, add students to them and send out tasks for students. The students can join classes and manage their tasks - complete or add more of them. It is a mobile application written in React Native with a Node.js server and a database."
+      "2": "is an online replacement for a student's notebook. It's made for teachers and students, primarily with music schools in mind, but it can be used in any field. Teachers can create classes, add students to them and send out tasks for students. The students can join classes and manage their tasks - complete or add more of them. It is a mobile application written in React Native with a Node.js server and a database."
     },
     "features": {
       "title": "Features:",
@@ -27,7 +27,7 @@
   },
   "nh": {
     "title": "Productivity focused Chromium extension",
-    "description": "Chromium extension replacing default new tab with a custom productivity focused home.",
+    "description": "Chromium extension replacing default new tab with a custom productivity focused application.",
     "features": {
       "title": "Features:",
       "1": "habit tracking",
@@ -40,6 +40,7 @@
     }
   },
   "other": {
+    "title": "Other projects",
     "sla": {
       "header": "Spotify Listen Along",
       "description": "Application allowing multiple people to listen along to one spotify playback controlled by one person. Uses WebSocket communication protocol."

@@ -55,7 +55,7 @@ export default function OtherShowcase() {
   return (
     <div className=" flex h-full flex-grow flex-col items-center justify-around px-6 pb-6">
       <div className=" flex h-[10vh] w-full items-center justify-center text-center text-4xl font-semibold">
-        <p>Other projects</p>
+        <p>{t("other.title")}</p>
       </div>
       <button onClick={() => scrollLeft()} className=" absolute left-0 z-20 md:left-20">
         <BsFillCaretLeftFill size="2em" />

@@ -40,6 +40,7 @@
     }
   },
   "other": {
+    "title": "Inne projekty",
     "sla": {
       "header": "Spotify Listen Along",
       "description": "Aplikacja dająca możliwość słuchania spotify w grupie przez internet. Korzysta z protokołu komunikacyjnego WebSocket."
@@ -58,9 +59,9 @@
     },
     "portfolio": {
       "header": "Strona którą właśnie przeglądasz",
-      "description": "Zaprojektowana oraz napisana bez użycia szablonów moja strona portfolio."
+      "description": "Zaprojektowana oraz napisana od podstaw przeze mnie moja strona portfolio."
     }
   },
-  "mySkills": "My Skills:",
-  "builtWith": "Built with:"
+  "mySkills": "Korzystam z:",
+  "builtWith": "Zbudowano w:"
 }
